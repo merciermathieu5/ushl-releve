@@ -1,0 +1,8 @@
+{
+  "name": "ushl-releve",
+  "private": true,
+  "description": "Surveille les simulations USHL et lance le relevé de production des interfaces de DG",
+  "scripts": {
+    "test": "node valide.js"
+  }
+}

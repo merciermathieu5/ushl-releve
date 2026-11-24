@@ -1,0 +1,62 @@
+name: Surveillance des simulations USHL
+
+# Regarde la date de la page XtraStats de ushl.ca trois fois par heure. Dès
+# qu'elle change (nouvelle simulation), lance « Relève de la production USHL »
+# dans les 22 dépôts des interfaces de DG, puis une seconde fois une heure plus
+# tard par sécurité. Voir scripts/surveiller.mjs.
+#
+# Pourquoi si souvent : GitHub retarde les relevés programmés de plusieurs
+# heures quand il est chargé et en saute parfois. Avec trois chances par heure,
+# au moins un passage tombe peu après la simulation. Chaque passage sans
+# nouvelle date ne fait qu'une requête et ne committe rien.
+#
+# Minutes 7, 27 et 47 plutôt que 0, 20 et 40 : GitHub est le plus chargé au
+# début de chaque heure.
+on:
+  schedule:
+    - cron: '7,27,47 * * * *'
+  workflow_dispatch:
+    inputs:
+      forcer:
+        description: 'Lancer les 22 relevés même si la date n''a pas changé'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: surveillance
+  cancel-in-progress: false
+
+jobs:
+  surveiller:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: Vérifier la date et lancer les relevés
+        env:
+          USHL_DISPATCH_TOKEN: ${{ secrets.USHL_DISPATCH_TOKEN }}
+        run: node scripts/surveiller.mjs ${{ inputs.forcer && '--forcer' || '' }}
+
+      # Même si un déclenchement a échoué, l'état (dépôts en attente) est gardé
+      # pour que le prochain passage les reprenne.
+      - name: Committer l'état s'il a changé
+        if: ${{ !cancelled() }}
+        run: |
+          if [[ -z "$(git status --porcelain data/etat.json)" ]]; then
+            echo "État inchangé."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/etat.json
+          git commit -m "Surveillance USHL : état du $(TZ=America/Toronto date +'%Y-%m-%d %H:%M')"
+          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+          git push
