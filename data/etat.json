@@ -2,8 +2,5 @@
  "date": "11/24/2026",
  "passe": 2,
  "dernierEnvoi": "2026-11-24T23:14:42.199Z",
- "enAttente": [
-  "Kraken",
-  "Lightning"
- ]
+ "enAttente": []
 }
