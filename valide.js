@@ -60,6 +60,7 @@ function lancer(dossier, { maintenant, jeton = 'jeton-test', extra = [] } = {}) 
     USHL_XTRA: `http://127.0.0.1:${port}/xtra`,
     GITHUB_API: `http://127.0.0.1:${port}/api`,
     USHL_PAUSE_MS: '0',
+    USHL_RAPIDE: '1',
   };
   if (maintenant) env.USHL_MAINTENANT = maintenant; else delete env.USHL_MAINTENANT;
   if (jeton) env.USHL_DISPATCH_TOKEN = jeton; else delete env.USHL_DISPATCH_TOKEN;

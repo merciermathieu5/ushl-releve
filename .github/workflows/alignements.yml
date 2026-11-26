@@ -1,0 +1,149 @@
+name: Relève centrale des alignements USHL
+
+# Relève les 32 alignements PRO sur ushl.ca UNE seule fois pour toute la ligue
+# (data/rosters.json), puis lance « Relève des alignements USHL » dans les 22
+# dépôts des interfaces de DG. Ceux-ci ne font que copier ce fichier.
+#
+# Avant le 26 novembre 2026, chaque dépôt relevait les 32 pages lui-même : plus
+# de 700 requêtes en quelques minutes, et ushl.ca servait sa page anti-robot à
+# presque tous. Voir scripts/fetch-rosters.mjs pour les ménagements.
+#
+# Deux passages par jour (minutes 43, loin du début de l'heure où GitHub est le
+# plus chargé), et à la demande depuis l'onglet Actions (« Run workflow »),
+# par exemple après une ronde d'agents libres. Un passage sans changement ne
+# committe rien et ne relance rien.
+on:
+  schedule:
+    - cron: '43 10 * * *'   # 10:43 UTC ≈ 05:43 heure de l'Est
+    - cron: '43 22 * * *'   # 22:43 UTC ≈ 17:43 heure de l'Est
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: releve-alignements
+  cancel-in-progress: false
+
+jobs:
+  relever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Un échec ici ne met pas le workflow en échec : c'est le job de reprise
+    # qui tranche.
+    continue-on-error: true
+    outputs:
+      ok: ${{ steps.releve.outputs.ok }}
+      change: ${{ steps.commit.outputs.change }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      # jsdom sert à réutiliser le parseur d'une interface tel quel.
+      - name: Installer jsdom
+        run: npm install jsdom --no-save --no-audit --no-fund
+
+      # Le parseur parseRoster vient de l'interface des Sharks, la version de
+      # référence (toutes les interfaces partagent le même).
+      - name: Récupérer le parseur de l'interface des Sharks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/interface"
+          gh api repos/merciermathieu5/Sharks/contents/index.html \
+            -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/interface/index.html"
+
+      - name: Relever les 32 alignements
+        id: releve
+        run: |
+          node scripts/fetch-rosters.mjs --interface "$RUNNER_TEMP/interface/index.html" \
+            && echo "ok=true" >> "$GITHUB_OUTPUT"
+
+      # Aussi après un relevé partiel : les équipes fraîches sont un gain.
+      - name: Committer si le fichier a changé
+        id: commit
+        if: ${{ !cancelled() }}
+        run: |
+          if [[ -z "$(git status --porcelain data/rosters.json)" ]]; then
+            echo "Aucun changement dans les alignements."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/rosters.json
+          git commit -m "Alignements USHL : relevé central du $(TZ=America/Toronto date +'%Y-%m-%d %H:%M')"
+          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+          git push
+          echo "change=true" >> "$GITHUB_OUTPUT"
+
+  reprise:
+    needs: relever
+    if: ${{ !cancelled() && needs.relever.outputs.ok != 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      change: ${{ steps.commit.outputs.change }}
+    steps:
+      # Runner neuf, donc autre adresse IP; la pause laisse ushl.ca se calmer.
+      - name: Attendre avant de réessayer
+        run: sleep 600
+
+      # la pointe de la branche : le premier job a peut-être poussé un relevé partiel
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: Installer jsdom
+        run: npm install jsdom --no-save --no-audit --no-fund
+
+      - name: Récupérer le parseur de l'interface des Sharks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/interface"
+          gh api repos/merciermathieu5/Sharks/contents/index.html \
+            -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/interface/index.html"
+
+      - name: Relever les 32 alignements (reprise)
+        run: node scripts/fetch-rosters.mjs --interface "$RUNNER_TEMP/interface/index.html"
+
+      - name: Committer si le fichier a changé
+        id: commit
+        run: |
+          if [[ -z "$(git status --porcelain data/rosters.json)" ]]; then
+            echo "Aucun changement dans les alignements."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/rosters.json
+          git commit -m "Alignements USHL : relevé central du $(TZ=America/Toronto date +'%Y-%m-%d %H:%M') (reprise)"
+          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+          git push
+          echo "change=true" >> "$GITHUB_OUTPUT"
+
+  # Les interfaces copient le nouveau fichier. Leur cron quotidien rattrape
+  # un dépôt dont le déclenchement se serait perdu.
+  diffuser:
+    needs: [relever, reprise]
+    if: ${{ !cancelled() && (needs.relever.outputs.change == 'true' || needs.reprise.outputs.change == 'true') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: Lancer la copie dans les 22 interfaces
+        env:
+          USHL_DISPATCH_TOKEN: ${{ secrets.USHL_DISPATCH_TOKEN }}
+        run: node scripts/diffuser.mjs

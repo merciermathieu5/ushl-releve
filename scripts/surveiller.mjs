@@ -26,7 +26,9 @@
  *  USHL_XTRA            adresse de la page XtraStats (tests hors ligne)
  *  GITHUB_API           racine de l'API GitHub (tests hors ligne)
  *  USHL_MAINTENANT      date ISO qui remplace l'heure courante (tests)
- *  USHL_PAUSE_MS        pause entre deux déclenchements (défaut 15 s)
+ *  USHL_PAUSE_MS        pause entre deux déclenchements (défaut 30 s, pour étaler
+ *                       les relevés de production sur une dizaine de minutes)
+ *  USHL_RAPIDE=1        aucune pause entre les essais sur XtraStats (tests)
  *
  * Usage : node scripts/surveiller.mjs [--etat data/etat.json] [--essai] [--forcer]
  *  --essai   n'envoie rien, affiche ce qui serait déclenché
@@ -38,25 +40,17 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const PROPRIETAIRE = 'merciermathieu5';
-const BRANCHE = 'main';
-const WORKFLOW = 'production.yml';
+import { PROPRIETAIRE, BRANCHE, DEPOTS } from './depots.mjs';
 
-/* Les 22 dépôts des interfaces de DG (tous sur main, tous avec production.yml,
-   vérifié le 24 novembre 2026). */
-const DEPOTS = [
-  'Blackhawks', 'Bruins', 'Canadiens', 'Canucks', 'Capitals', 'Devils',
-  'Ducks', 'Flames', 'Flyers', 'GoldenKnights', 'Hurricanes', 'Islanders',
-  'Jets', 'Kraken', 'Lightning', 'Oilers', 'Penguins', 'Predateurs',
-  'Sabres', 'Sharks', 'Stars', 'senateurs'
-];
+const WORKFLOW = 'production.yml';
 
 const XTRA = process.env.USHL_XTRA || 'https://ushl.ca/ushl/menu_sim/USHL-pro/USHLxtrastats.html';
 const API = (process.env.GITHUB_API || 'https://api.github.com').replace(/\/$/, '');
-const PAUSE_MS = process.env.USHL_PAUSE_MS !== undefined ? Number(process.env.USHL_PAUSE_MS) : 15000;
+const PAUSE_MS = process.env.USHL_PAUSE_MS !== undefined ? Number(process.env.USHL_PAUSE_MS) : 30000;
 const SECONDE_PASSE_MIN = 60;
 const DELAI_MS = 20000;
 const ESSAIS = 3;
+const RAPIDE = process.env.USHL_RAPIDE === '1';
 
 const args = process.argv.slice(2);
 const ESSAI = args.includes('--essai');
@@ -75,7 +69,12 @@ async function dateXtra() {
       const t = setTimeout(() => ctl.abort(), DELAI_MS);
       const rep = await fetch(XTRA, {
         signal: ctl.signal,
-        headers: { 'User-Agent': 'usc-dashboard-bot/1.0 (+github actions)' }
+        headers: {
+          // un navigateur ordinaire : « usc-dashboard-bot » s'annonçait robot
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'fr-CA,fr;q=0.9,en;q=0.8'
+        }
       });
       clearTimeout(t);
       if (!rep.ok) throw new Error('HTTP ' + rep.status);
@@ -85,7 +84,7 @@ async function dateXtra() {
       throw new Error(`date introuvable (${txt.length} car., page anti-robot probable)`);
     } catch (e) {
       console.log(`  XtraStats, essai ${essai}/${ESSAIS} : ${e.message}`);
-      if (essai < ESSAIS) await dodo(2000 * essai);
+      if (essai < ESSAIS) await dodo(RAPIDE ? 0 : 10000 * essai);
     }
   }
   return null;
