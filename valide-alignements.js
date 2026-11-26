@@ -55,13 +55,18 @@ function pageEquipe(code) {
 const PAGE_ANTI_ROBOT = '<html><head><title>One moment, please...</title></head><body>' +
   '<p>Loader Please wait while your request is being verified...</p>' + '<!-- '.padEnd(12000, 'x') + ' --></body></html>';
 
+// Version traduite, servie quand Accept-Language demande le français (comme ushl.ca).
+const PAGE_ANTI_ROBOT_FR = '<html><head><title>Un instant, s\'il vous plaît…</title></head><body>' +
+  '<p>Loader Votre demande est en cours de vérification, veuillez patienter…</p>' + '<!-- '.padEnd(12000, 'x') + ' --></body></html>';
+faux.francais = false;
+
 const serveur = http.createServer((req, res) => {
   const u = new URL(req.url, 'http://x');
   if (u.pathname === '/TeamRosters.php') {
     const code = u.searchParams.get('team');
     faux.requetes.push(code);
     faux.entetes = req.headers;
-    if (EQUIPES.indexOf(code) >= faux.bloquerDes) { res.writeHead(200, { 'Content-Type': 'text/html' }); return res.end(PAGE_ANTI_ROBOT); }
+    if (EQUIPES.indexOf(code) >= faux.bloquerDes) { res.writeHead(200, { 'Content-Type': 'text/html' }); return res.end(faux.francais ? PAGE_ANTI_ROBOT_FR : PAGE_ANTI_ROBOT); }
     if (faux.panne.has(code)) { res.writeHead(500); return res.end('panne'); }
     res.writeHead(200, { 'Content-Type': 'text/html' });
     return res.end(pageEquipe(code));
@@ -103,7 +108,7 @@ function dossierNeuf(avecExistant) {
   return d;
 }
 const lire = d => JSON.parse(fs.readFileSync(path.join(d, 'data', 'rosters.json'), 'utf8'));
-const remettre = () => { faux.bloquerDes = Infinity; faux.panne = new Set(); faux.requetes = []; faux.appels = []; };
+const remettre = () => { faux.francais = false; faux.bloquerDes = Infinity; faux.panne = new Set(); faux.requetes = []; faux.appels = []; };
 
 (async () => {
   await new Promise(r => serveur.listen(0, '127.0.0.1', r));
@@ -132,6 +137,11 @@ const remettre = () => { faux.bloquerDes = Infinity; faux.panne = new Set(); fau
   verifier(faux.requetes.length === 9, '9 requêtes (3 équipes × 3 essais) au lieu de 96 (obtenu ' + faux.requetes.length + ')');
   verifier(fs.readFileSync(path.join(d, 'data', 'rosters.json'), 'utf8') === avant, 'fichier existant laissé intact');
   verifier(/page anti-robot/.test(r.sortie) && /relevé interrompu/.test(r.sortie), 'blocage nommé dans le journal');
+
+  console.log('3b. Page anti-robot en français : reconnue aussi, arrêt après 3 équipes');
+  remettre(); faux.bloquerDes = 0; faux.francais = true; d = dossierNeuf(true);
+  r = await lancer(RELEVE, d, argsI);
+  verifier(r.code === 1 && faux.requetes.length === 9, '9 requêtes avec la page française (obtenu ' + faux.requetes.length + ')');
 
   console.log('4. Bloqué en cours de route : parts fraîches écrites, code 1 pour la reprise');
   remettre(); faux.bloquerDes = 10; d = dossierNeuf(true);
