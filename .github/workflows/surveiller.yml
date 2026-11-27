@@ -1,9 +1,10 @@
 name: Surveillance des simulations USHL
 
 # Regarde la date de la page XtraStats de ushl.ca trois fois par heure. Dès
-# qu'elle change (nouvelle simulation), lance « Relève de la production USHL »
-# dans les 22 dépôts des interfaces de DG, puis une seconde fois une heure plus
-# tard par sécurité. Voir scripts/surveiller.mjs.
+# qu'elle change (nouvelle simulation), lance « Relève centrale de la production
+# USHL » (production.yml de ce dépôt), puis une seconde fois une heure plus tard
+# par sécurité. Ce relevé lit ushl.ca une seule fois pour les 22 clubs, puis
+# lance la copie dans les interfaces. Voir scripts/surveiller.mjs.
 #
 # Pourquoi si souvent : GitHub retarde les relevés programmés de plusieurs
 # heures quand il est chargé et en saute parfois. Avec trois chances par heure,
@@ -18,12 +19,13 @@ on:
   workflow_dispatch:
     inputs:
       forcer:
-        description: 'Lancer les 22 relevés même si la date n''a pas changé'
+        description: 'Lancer le relevé central même si la date n''a pas changé'
         type: boolean
         default: false
 
 permissions:
   contents: write
+  actions: write    # lancer production.yml de ce dépôt
 
 concurrency:
   group: surveillance
@@ -40,12 +42,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Vérifier la date et lancer les relevés
+      - name: Vérifier la date et lancer le relevé central
         env:
-          USHL_DISPATCH_TOKEN: ${{ secrets.USHL_DISPATCH_TOKEN }}
+          USHL_DISPATCH_TOKEN: ${{ github.token }}
         run: node scripts/surveiller.mjs ${{ inputs.forcer && '--forcer' || '' }}
 
-      # Même si un déclenchement a échoué, l'état (dépôts en attente) est gardé
+      # Même si le déclenchement a échoué, l'état (en attente) est gardé
       # pour que le prochain passage les reprenne.
       - name: Committer l'état s'il a changé
         if: ${{ !cancelled() }}

@@ -1,8 +1,8 @@
 {
   "name": "ushl-releve",
   "private": true,
-  "description": "Relève centrale des alignements USHL et surveillance des simulations pour les interfaces de DG",
+  "description": "Relèves centrales USHL (alignements et production) et surveillance des simulations pour les interfaces de DG",
   "scripts": {
-    "test": "node valide.js && node valide-alignements.js"
+    "test": "node valide.js && node valide-alignements.js && node valide-production.js"
   }
 }

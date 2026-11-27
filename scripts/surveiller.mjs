@@ -1,38 +1,40 @@
 #!/usr/bin/env node
 /**
  * Surveille la date de la page XtraStats de ushl.ca et, dès qu'elle change
- * (donc après une simulation), lance le relevé de production (production.yml)
- * dans chacun des dépôts des interfaces de DG.
+ * (donc après une simulation), lance le relevé CENTRAL de la production
+ * (production.yml de ushl-releve). Celui-ci relève les 22 clubs une seule fois
+ * puis lance la copie dans chaque interface de DG.
  *
- * Pourquoi : les relevés programmés de chaque dépôt partent avec plusieurs
- * heures de retard du côté de GitHub (jusqu'à 11 h observées en novembre 2026).
- * Ce script tourne souvent et ne fait qu'une requête légère; quand il voit une
- * nouvelle date, il déclenche les 22 relevés lui-même avec workflow_dispatch.
+ * Pourquoi : les relevés programmés partent avec plusieurs heures de retard du
+ * côté de GitHub (jusqu'à 11 h observées en novembre 2026). Ce script tourne
+ * souvent et ne fait qu'une requête légère; quand il voit une nouvelle date,
+ * il déclenche le relevé lui-même avec workflow_dispatch.
+ *
+ * Avant le 27 novembre 2026, il lançait le relevé dans les 22 dépôts, qui
+ * interrogeaient ushl.ca chacun de leur côté : ushl.ca servait sa page
+ * anti-robot et les relèves échouaient en série.
  *
  * Deux passes par simulation :
  *  1) dès que la nouvelle date apparaît;
  *  2) une seconde fois au moins SECONDE_PASSE_MIN minutes plus tard, au cas où
  *     le gabarit de pointage aurait été publié un peu après XtraStats. Un
  *     relevé sans changement ne committe rien, donc cette passe ne coûte rien.
- * Un dépôt dont le déclenchement échoue reste en attente et est repris au
- * passage suivant du script.
- *
- * Les crons de chaque dépôt restent en place comme filet de sécurité.
+ * Un déclenchement qui échoue reste en attente et est repris au passage
+ * suivant du script.
  *
  * Variables d'environnement :
- *  USHL_DISPATCH_TOKEN  jeton à accès fin, permission « Actions : lecture et
- *                       écriture » sur les dépôts des équipes (obligatoire,
- *                       sauf avec --essai)
+ *  USHL_DISPATCH_TOKEN  jeton qui peut lancer un workflow de ushl-releve
+ *                       (le GITHUB_TOKEN du workflow, avec « actions: write »;
+ *                       obligatoire, sauf avec --essai)
  *  USHL_XTRA            adresse de la page XtraStats (tests hors ligne)
  *  GITHUB_API           racine de l'API GitHub (tests hors ligne)
  *  USHL_MAINTENANT      date ISO qui remplace l'heure courante (tests)
- *  USHL_PAUSE_MS        pause entre deux déclenchements (défaut 30 s, pour étaler
- *                       les relevés de production sur une dizaine de minutes)
+ *  USHL_CENTRAL         dépôt du relevé central (défaut ushl-releve, tests)
  *  USHL_RAPIDE=1        aucune pause entre les essais sur XtraStats (tests)
  *
  * Usage : node scripts/surveiller.mjs [--etat data/etat.json] [--essai] [--forcer]
  *  --essai   n'envoie rien, affiche ce qui serait déclenché
- *  --forcer  déclenche tous les dépôts même si la date n'a pas changé
+ *  --forcer  déclenche le relevé même si la date n'a pas changé
  * Sortie : code 0 si tout va bien (y compris « rien à faire »), 1 si au moins
  * un déclenchement a échoué ou si le jeton manque.
  */
@@ -40,13 +42,14 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { PROPRIETAIRE, BRANCHE, DEPOTS } from './depots.mjs';
+import { PROPRIETAIRE, BRANCHE } from './depots.mjs';
 
 const WORKFLOW = 'production.yml';
+const CENTRAL = process.env.USHL_CENTRAL || 'ushl-releve';
+const TOUS = [CENTRAL];
 
 const XTRA = process.env.USHL_XTRA || 'https://ushl.ca/ushl/menu_sim/USHL-pro/USHLxtrastats.html';
 const API = (process.env.GITHUB_API || 'https://api.github.com').replace(/\/$/, '');
-const PAUSE_MS = process.env.USHL_PAUSE_MS !== undefined ? Number(process.env.USHL_PAUSE_MS) : 30000;
 const SECONDE_PASSE_MIN = 60;
 const DELAI_MS = 20000;
 const ESSAIS = 3;
@@ -136,8 +139,6 @@ async function envoyer(liste, jeton) {
     } else {
       console.log(`  ✓ ${depot}`);
     }
-    // Pause entre deux dépôts pour ne pas solliciter ushl.ca d'un seul coup.
-    if (i < liste.length - 1 && PAUSE_MS > 0) await dodo(PAUSE_MS);
   }
   return echecs;
 }
@@ -158,9 +159,10 @@ async function main() {
   console.log(`Date XtraStats : ${date ?? 'illisible'} · dernière connue : ${etat.date ?? 'aucune'} · passe ${etat.passe}`);
 
   let liste = [];
+  let reprise = false;
   if (FORCER) {
-    console.log('Déclenchement forcé de tous les dépôts.');
-    liste = DEPOTS.slice();
+    console.log('Déclenchement forcé du relevé central.');
+    liste = TOUS.slice();
     if (date) {
       etat.date = date;
       etat.passe = 1;
@@ -171,15 +173,16 @@ async function main() {
     console.log(`Nouvelle simulation détectée (${etat.date ?? 'aucune'} → ${date}) : passe 1.`);
     etat.date = date;
     etat.passe = 1;
-    liste = DEPOTS.slice();
+    liste = TOUS.slice();
   } else if (etat.enAttente.length) {
-    console.log(`Reprise des dépôts en attente (passe ${etat.passe}).`);
+    console.log(`Reprise du déclenchement en attente (passe ${etat.passe}).`);
     liste = etat.enAttente.slice();
+    reprise = true;
   } else if (etat.passe === 1 && etat.dernierEnvoi &&
              now - new Date(etat.dernierEnvoi) >= SECONDE_PASSE_MIN * 60000) {
     console.log('Seconde passe de sécurité.');
     etat.passe = 2;
-    liste = DEPOTS.slice();
+    liste = TOUS.slice();
   } else {
     console.log('Rien à faire.');
   }
@@ -190,7 +193,7 @@ async function main() {
     if (!ESSAI) {
       etat.enAttente = echecs;
       // La seconde passe se mesure à partir de la passe complète, pas d'une reprise.
-      if (liste.length === DEPOTS.length) etat.dernierEnvoi = now.toISOString();
+      if (!reprise) etat.dernierEnvoi = now.toISOString();
       console.log(`${liste.length - echecs.length}/${liste.length} relevé(s) lancé(s).`);
     }
   }
