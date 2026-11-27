@@ -12,7 +12,8 @@ const path = require('node:path');
 const { execFile } = require('node:child_process');
 
 const SCRIPT = path.join(__dirname, 'scripts', 'surveiller.mjs');
-const NB_DEPOTS = 22;
+const CENTRAL = 'ushl-releve';
+const NB_DEPOTS = 1;   // le relevé central seulement (avant le 27 novembre 2026 : les 22 dépôts)
 
 let ok = 0, ko = 0;
 function verifier(cond, libelle) {
@@ -78,17 +79,16 @@ async function scenarios() {
   const d = fs.mkdtempSync(path.join(os.tmpdir(), 'surv-'));
   let r, e;
 
-  console.log('1. Premier passage, aucune date connue : passe 1 sur les 22 dépôts');
+  console.log('1. Premier passage, aucune date connue : passe 1, relevé central lancé');
   remise(); faux.page = pageXtra('11/24/2026');
   r = await lancer(d, { maintenant: '2026-11-24T13:30:00Z' });
   verifier(r.code === 0, 'code 0');
-  verifier(faux.appels.length === NB_DEPOTS, `22 déclenchements (obtenu ${faux.appels.length})`);
-  verifier(new Set(faux.appels.map(a => a.depot)).size === NB_DEPOTS, 'aucun dépôt en double');
+  verifier(faux.appels.length === NB_DEPOTS, `1 déclenchement (obtenu ${faux.appels.length})`);
+  verifier(faux.appels.every(a => a.depot === CENTRAL), 'seulement ushl-releve, aucune interface');
   verifier(faux.appels.every(a => a.proprio === 'merciermathieu5'), 'propriétaire merciermathieu5');
   verifier(faux.appels.every(a => a.workflow === 'production.yml'), 'workflow production.yml');
   verifier(faux.appels.every(a => a.ref === 'main'), 'branche main');
   verifier(faux.appels.every(a => a.auth === 'Bearer jeton-test'), 'jeton transmis');
-  verifier(faux.appels.some(a => a.depot === 'Sharks') && faux.appels.some(a => a.depot === 'senateurs'), 'Sharks et senateurs inclus');
   e = lireEtat(d);
   verifier(e.date === '11/24/2026' && e.passe === 1, 'état : date et passe 1');
   verifier(e.dernierEnvoi === '2026-11-24T13:30:00.000Z', 'état : heure de la passe 1');
@@ -107,7 +107,7 @@ async function scenarios() {
   remise();
   r = await lancer(d, { maintenant: '2026-11-24T14:30:00Z' });
   verifier(r.code === 0, 'code 0');
-  verifier(faux.appels.length === NB_DEPOTS, `22 déclenchements (obtenu ${faux.appels.length})`);
+  verifier(faux.appels.length === NB_DEPOTS && faux.appels[0].depot === CENTRAL, `relevé central relancé (obtenu ${faux.appels.length})`);
   e = lireEtat(d);
   verifier(e.passe === 2, 'état : passe 2');
   verifier(e.dernierEnvoi === '2026-11-24T14:30:00.000Z', 'état : heure de la passe 2');
@@ -132,21 +132,21 @@ async function scenarios() {
   r = await lancer(d, { maintenant: '2026-11-25T03:27:00Z' });
   verifier(r.code === 0 && faux.appels.length === 0, 'code 0 et aucun déclenchement');
 
-  console.log('7. Nouvelle simulation avec 2 dépôts en panne : échecs gardés en attente');
-  remise(); faux.page = pageXtra('11/26/2026'); faux.echouer = new Set(['Kraken', 'Bruins']);
+  console.log('7. Nouvelle simulation, déclenchement en panne : gardé en attente');
+  remise(); faux.page = pageXtra('11/26/2026'); faux.echouer = new Set([CENTRAL]);
   r = await lancer(d, { maintenant: '2026-11-26T05:07:00Z' });
   verifier(r.code === 1, 'code 1 (échecs)');
-  verifier(faux.appels.length === NB_DEPOTS, 'les 22 tentés malgré les pannes');
+  verifier(faux.appels.length === NB_DEPOTS, 'déclenchement tenté');
   e = lireEtat(d);
   verifier(e.date === '11/26/2026' && e.passe === 1, 'état : nouvelle date, passe 1');
-  verifier(JSON.stringify(e.enAttente.slice().sort()) === '["Bruins","Kraken"]', 'en attente : Bruins et Kraken');
+  verifier(JSON.stringify(e.enAttente) === JSON.stringify([CENTRAL]), 'en attente : ushl-releve');
   verifier(e.dernierEnvoi === '2026-11-26T05:07:00.000Z', 'heure de la passe 1 enregistrée');
 
-  console.log('8. Passage suivant : seuls les dépôts en attente sont repris');
+  console.log('8. Passage suivant : le déclenchement en attente est repris');
   remise();
   r = await lancer(d, { maintenant: '2026-11-26T05:27:00Z' });
   verifier(r.code === 0, 'code 0');
-  verifier(JSON.stringify(faux.appels.map(a => a.depot).sort()) === '["Bruins","Kraken"]', 'seulement Bruins et Kraken');
+  verifier(JSON.stringify(faux.appels.map(a => a.depot)) === JSON.stringify([CENTRAL]), 'repris une fois');
   e = lireEtat(d);
   verifier(e.enAttente.length === 0, 'plus rien en attente');
   verifier(e.dernierEnvoi === '2026-11-26T05:07:00.000Z', 'la reprise ne repousse pas la seconde passe');
@@ -154,7 +154,7 @@ async function scenarios() {
   console.log('9. Seconde passe calculée depuis la passe 1, pas depuis la reprise');
   remise();
   r = await lancer(d, { maintenant: '2026-11-26T06:07:00Z' });
-  verifier(faux.appels.length === NB_DEPOTS && lireEtat(d).passe === 2, 'passe 2 sur les 22');
+  verifier(faux.appels.length === NB_DEPOTS && lireEtat(d).passe === 2, 'passe 2');
 
   console.log('10. Jeton absent : erreur claire, rien envoyé, état intact');
   remise(); faux.page = pageXtra('11/28/2026');
@@ -170,18 +170,18 @@ async function scenarios() {
   r = await lancer(d, { maintenant: '2026-11-28T05:07:00Z', jeton: null, extra: ['--essai'] });
   verifier(r.code === 0, 'code 0');
   verifier(faux.appels.length === 0, 'aucun déclenchement');
-  verifier((r.sortie.match(/\(essai\)/g) || []).length === NB_DEPOTS, '22 lignes « (essai) »');
+  verifier((r.sortie.match(/\(essai\)/g) || []).length === NB_DEPOTS, '1 ligne « (essai) »');
   verifier(fs.readFileSync(path.join(d, 'etat.json'), 'utf8') === avant10, 'état intact');
 
-  console.log('12. Forcer avec la date déjà connue : 22 déclenchements');
+  console.log('12. Forcer avec la date déjà connue : relevé central lancé');
   remise(); faux.page = pageXtra('11/26/2026');
   r = await lancer(d, { maintenant: '2026-11-26T09:00:00Z', extra: ['--forcer'] });
-  verifier(r.code === 0 && faux.appels.length === NB_DEPOTS, 'code 0 et 22 déclenchements');
+  verifier(r.code === 0 && faux.appels.length === NB_DEPOTS, 'code 0 et 1 déclenchement');
 
   console.log('13. Forcer alors que la page est bloquée : déclenche quand même, date gardée');
   remise(); faux.page = PAGE_ANTI_ROBOT;
   r = await lancer(d, { maintenant: '2026-11-26T09:30:00Z', extra: ['--forcer'] });
-  verifier(faux.appels.length === NB_DEPOTS, '22 déclenchements');
+  verifier(faux.appels.length === NB_DEPOTS, '1 déclenchement');
   verifier(lireEtat(d).date === '11/26/2026', 'date connue conservée');
 
   console.log('14. Fichier d\'état absent dans un dossier neuf : créé');

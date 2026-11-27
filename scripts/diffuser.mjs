@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 /**
- * Lance « Relève des alignements USHL » (rosters.yml) dans chaque dépôt
- * d'interface après un nouveau relevé central. Ce workflow ne fait que copier
- * data/rosters.json de ushl-releve : aucune requête vers ushl.ca, donc une
- * courte pause entre deux dépôts suffit.
+ * Lance la copie d'un relevé central dans chaque dépôt d'interface :
+ *  - « Relève des alignements USHL » (rosters.yml, par défaut) après un
+ *    nouveau data/rosters.json;
+ *  - « Relève de la production USHL » (--workflow production.yml) après un
+ *    nouveau data/production.json.
+ * Ces workflows ne font que copier le fichier de ushl-releve : aucune requête
+ * vers ushl.ca, donc une courte pause entre deux dépôts suffit.
  *
  * Variables d'environnement :
  *  USHL_DISPATCH_TOKEN  jeton à accès fin, « Actions : lecture et écriture »
@@ -11,13 +14,14 @@
  *  GITHUB_API           racine de l'API GitHub (tests hors ligne)
  *  USHL_PAUSE_MS        pause entre deux déclenchements (défaut 3 s)
  *
- * Usage : node scripts/diffuser.mjs [--essai]
+ * Usage : node scripts/diffuser.mjs [--workflow rosters.yml|production.yml] [--essai]
  * Sortie : code 0 si tous les dépôts ont été lancés, 1 sinon.
  */
 
 import { PROPRIETAIRE, BRANCHE, DEPOTS } from './depots.mjs';
 
-const WORKFLOW = 'rosters.yml';
+const iWorkflow = process.argv.indexOf('--workflow');
+const WORKFLOW = iWorkflow >= 0 && process.argv[iWorkflow + 1] ? process.argv[iWorkflow + 1] : 'rosters.yml';
 const API = (process.env.GITHUB_API || 'https://api.github.com').replace(/\/$/, '');
 const PAUSE_MS = process.env.USHL_PAUSE_MS !== undefined ? Number(process.env.USHL_PAUSE_MS) : 3000;
 const ESSAI = process.argv.includes('--essai');
@@ -46,7 +50,7 @@ async function declencher(depot, jeton) {
 async function main() {
   const jeton = process.env.USHL_DISPATCH_TOKEN;
   if (!jeton && !ESSAI) {
-    console.error('Secret USHL_DISPATCH_TOKEN absent : impossible de diffuser les alignements.');
+    console.error(`Secret USHL_DISPATCH_TOKEN absent : impossible de lancer ${WORKFLOW} dans les interfaces.`);
     process.exit(1);
   }
   const echecs = [];
@@ -58,7 +62,7 @@ async function main() {
     else console.log(`  ✓ ${depot}`);
     if (i < DEPOTS.length - 1 && PAUSE_MS > 0) await dodo(PAUSE_MS);
   }
-  console.log(`${DEPOTS.length - echecs.length}/${DEPOTS.length} copie(s) lancée(s).` +
+  console.log(`${DEPOTS.length - echecs.length}/${DEPOTS.length} copie(s) lancée(s) (${WORKFLOW}).` +
     (echecs.length ? ` Leur cron quotidien rattrapera : ${echecs.join(', ')}` : ''));
   if (echecs.length) process.exit(1);
 }

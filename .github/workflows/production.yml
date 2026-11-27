@@ -1,0 +1,159 @@
+name: Relève centrale de la production USHL
+
+# Relève la production des 22 clubs sur ushl.ca UNE seule fois pour toute la
+# ligue (data/production.json : pointage, fiche et XtraStats de chaque club),
+# puis lance « Relève de la production USHL » dans les 22 dépôts des
+# interfaces de DG. Ceux-ci ne font que copier la part de leur club.
+#
+# Avant le 27 novembre 2026, chaque dépôt relevait sa production lui-même, à
+# chaque simulation, à la seconde passe et à ses deux crons (retardés de
+# plusieurs heures par GitHub) : une soixantaine de relèves par jour, et
+# ushl.ca servait sa page anti-robot (courriels « Run failed » en série).
+# Ici : 45 requêtes lentes par relève. Voir scripts/fetch-production.mjs.
+#
+# Lancé par « Surveillance des simulations USHL » (surveiller.yml) dès qu'une
+# nouvelle simulation paraît, puis une heure plus tard. Aussi à la demande
+# depuis l'onglet Actions (« Run workflow »). Un relevé sans changement ne
+# committe rien et ne relance rien.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Un seul relevé de la production à la fois : un second lancement attend la
+# fin du premier (et ne garde que le plus récent en attente).
+concurrency:
+  group: releve-production
+  cancel-in-progress: false
+
+jobs:
+  relever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Un échec ici ne met pas le workflow en échec : c'est le job de reprise
+    # qui tranche.
+    continue-on-error: true
+    outputs:
+      ok: ${{ steps.releve.outputs.ok }}
+      a_reprendre: ${{ steps.releve.outputs.a_reprendre }}
+      change: ${{ steps.commit.outputs.change }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      # jsdom sert à réutiliser les parseurs d'une interface tels quels.
+      - name: Installer jsdom
+        run: npm install jsdom --no-save --no-audit --no-fund
+
+      # Les parseurs viennent de l'interface des Sharks, la version de
+      # référence (toutes les interfaces partagent les mêmes).
+      - name: Récupérer les parseurs de l'interface des Sharks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/interface"
+          gh api repos/merciermathieu5/Sharks/contents/index.html \
+            -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/interface/index.html"
+
+      - name: Relever la production des 22 clubs
+        id: releve
+        run: node scripts/fetch-production.mjs --interface "$RUNNER_TEMP/interface/index.html"
+
+      # Aussi après un relevé partiel : les clubs frais sont un gain.
+      - name: Committer si le fichier a changé
+        id: commit
+        if: ${{ !cancelled() }}
+        run: |
+          if [[ -z "$(git status --porcelain data/production.json)" ]]; then
+            echo "Aucun changement dans la production."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/production.json
+          git commit -m "Production USHL : relevé central du $(TZ=America/Toronto date +'%Y-%m-%d %H:%M')"
+          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+          git push
+          echo "change=true" >> "$GITHUB_OUTPUT"
+
+  reprise:
+    needs: relever
+    if: ${{ !cancelled() && needs.relever.outputs.ok != 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      change: ${{ steps.commit.outputs.change }}
+    steps:
+      # Runner neuf, donc autre adresse IP; la pause laisse ushl.ca se calmer.
+      - name: Attendre avant de réessayer
+        run: sleep 600
+
+      # la pointe de la branche : le premier job a peut-être poussé un relevé partiel
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: Installer jsdom
+        run: npm install jsdom --no-save --no-audit --no-fund
+
+      - name: Récupérer les parseurs de l'interface des Sharks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/interface"
+          gh api repos/merciermathieu5/Sharks/contents/index.html \
+            -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/interface/index.html"
+
+      # Seulement ce qui manque au premier passage (tout, s'il a planté).
+      - name: Relever la production (reprise)
+        env:
+          A_REPRENDRE: ${{ needs.relever.outputs.a_reprendre }}
+        run: |
+          if [[ -n "$A_REPRENDRE" ]]; then
+            node scripts/fetch-production.mjs --interface "$RUNNER_TEMP/interface/index.html" --equipes "$A_REPRENDRE"
+          else
+            node scripts/fetch-production.mjs --interface "$RUNNER_TEMP/interface/index.html"
+          fi
+
+      - name: Committer si le fichier a changé
+        id: commit
+        if: ${{ !cancelled() }}
+        run: |
+          if [[ -z "$(git status --porcelain data/production.json)" ]]; then
+            echo "Aucun changement dans la production."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/production.json
+          git commit -m "Production USHL : relevé central du $(TZ=America/Toronto date +'%Y-%m-%d %H:%M') (reprise)"
+          git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
+          git push
+          echo "change=true" >> "$GITHUB_OUTPUT"
+
+  # Les interfaces copient la part de leur club. Leur cron rattrape un dépôt
+  # dont le déclenchement se serait perdu.
+  diffuser:
+    needs: [relever, reprise]
+    if: ${{ !cancelled() && (needs.relever.outputs.change == 'true' || needs.reprise.outputs.change == 'true') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+
+      - name: Lancer la copie dans les 22 interfaces
+        env:
+          USHL_DISPATCH_TOKEN: ${{ secrets.USHL_DISPATCH_TOKEN }}
+        run: node scripts/diffuser.mjs --workflow production.yml
