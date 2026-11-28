@@ -1,14 +1,14 @@
 {
- "genere": "2026-11-26T09:02:40.600Z",
- "maj": "11/26/2026",
- "source": "amorcé le 27 novembre 2026 avec les derniers relevés des 22 interfaces",
+ "genere": "2026-11-28T11:38:24.351Z",
+ "maj": "11/28/2026",
+ "source": "ushl.ca : TeamScoringTemplate.php, TeamScoring.php et USHLxtrastats.html",
  "equipes": {
   "CHICAGO": {
-   "genere": "2026-11-26T08:56:48.575Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "CHICAGO",
    "fiche": "CHICAGO 11-9-0",
    "pointage": {
-    "releve": "2026-11-26T08:56:48.575Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "William Nylander",
@@ -312,8 +312,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:56:48.575Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Brett Pesce",
@@ -600,119 +600,119 @@
    "reprises": []
   },
   "BOSTON": {
-   "genere": "2026-11-26T08:57:04.966Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "BOSTON",
-   "fiche": "BOSTON 10-6-5",
+   "fiche": "BOSTON 11-6-5",
    "pointage": {
-    "releve": "2026-11-26T08:57:04.966Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Matt Duchene",
-      "gp": 21,
+      "gp": 22,
       "goals": 12,
-      "assists": 17,
-      "pts": 29,
-      "plusminus": 7,
+      "assists": 20,
+      "pts": 32,
+      "plusminus": 9,
       "pim": 2,
       "ppg": 3,
       "gwg": 1,
-      "shots": 72,
+      "shots": 76,
       "hits": 30
      },
      {
-      "nom": "Jordan Kyrou",
-      "gp": 21,
-      "goals": 9,
-      "assists": 15,
-      "pts": 24,
-      "plusminus": 2,
-      "pim": 12,
-      "ppg": 2,
-      "gwg": 0,
-      "shots": 62,
-      "hits": 9
-     },
-     {
       "nom": "Patrick Laine",
-      "gp": 21,
-      "goals": 9,
+      "gp": 22,
+      "goals": 10,
       "assists": 14,
-      "pts": 23,
-      "plusminus": 11,
-      "pim": 4,
+      "pts": 24,
+      "plusminus": 12,
+      "pim": 16,
       "ppg": 0,
       "gwg": 1,
-      "shots": 65,
+      "shots": 69,
       "hits": 28
      },
      {
+      "nom": "Jordan Kyrou",
+      "gp": 22,
+      "goals": 9,
+      "assists": 15,
+      "pts": 24,
+      "plusminus": 1,
+      "pim": 12,
+      "ppg": 2,
+      "gwg": 0,
+      "shots": 64,
+      "hits": 10
+     },
+     {
+      "nom": "Tim Bozon",
+      "gp": 22,
+      "goals": 10,
+      "assists": 10,
+      "pts": 20,
+      "plusminus": 1,
+      "pim": 6,
+      "ppg": 2,
+      "gwg": 0,
+      "shots": 58,
+      "hits": 33
+     },
+     {
       "nom": "Brad Marchand",
-      "gp": 21,
+      "gp": 22,
       "goals": 9,
       "assists": 11,
       "pts": 20,
       "plusminus": 11,
-      "pim": 40,
+      "pim": 42,
       "ppg": 2,
       "gwg": 0,
-      "shots": 52,
-      "hits": 37
+      "shots": 54,
+      "hits": 39
      },
      {
       "nom": "Brock Boeser",
-      "gp": 19,
+      "gp": 20,
       "goals": 8,
-      "assists": 9,
-      "pts": 17,
+      "assists": 10,
+      "pts": 18,
       "plusminus": 10,
       "pim": 8,
       "ppg": 1,
       "gwg": 0,
-      "shots": 48,
-      "hits": 40
-     },
-     {
-      "nom": "Tim Bozon",
-      "gp": 21,
-      "goals": 9,
-      "assists": 8,
-      "pts": 17,
-      "plusminus": -1,
-      "pim": 6,
-      "ppg": 2,
-      "gwg": 0,
-      "shots": 57,
-      "hits": 30
+      "shots": 49,
+      "hits": 42
      },
      {
       "nom": "Artem Zub",
-      "gp": 21,
+      "gp": 22,
       "goals": 4,
       "assists": 13,
       "pts": 17,
-      "plusminus": 13,
-      "pim": 17,
+      "plusminus": 12,
+      "pim": 19,
       "ppg": 4,
       "gwg": 0,
-      "shots": 32,
-      "hits": 36
+      "shots": 35,
+      "hits": 39
      },
      {
       "nom": "Anthony Cirelli",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
       "assists": 6,
       "pts": 13,
-      "plusminus": 0,
+      "plusminus": -1,
       "pim": 10,
       "ppg": 1,
       "gwg": 2,
-      "shots": 42,
+      "shots": 43,
       "hits": 17
      },
      {
       "nom": "J.G. Pageau",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 9,
       "pts": 11,
@@ -720,38 +720,38 @@
       "pim": 6,
       "ppg": 0,
       "gwg": 1,
-      "shots": 19,
+      "shots": 23,
       "hits": 28
      },
      {
       "nom": "Jake McCabe",
-      "gp": 18,
+      "gp": 19,
       "goals": 3,
       "assists": 7,
       "pts": 10,
-      "plusminus": 5,
+      "plusminus": 7,
       "pim": 2,
       "ppg": 0,
       "gwg": 2,
       "shots": 32,
-      "hits": 26
+      "hits": 30
      },
      {
       "nom": "Ben Thomas",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 7,
       "pts": 10,
-      "plusminus": 3,
+      "plusminus": 5,
       "pim": 26,
       "ppg": 0,
       "gwg": 0,
       "shots": 27,
-      "hits": 63
+      "hits": 65
      },
      {
       "nom": "Cody Ceci",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 8,
       "pts": 10,
@@ -759,12 +759,12 @@
       "pim": 6,
       "ppg": 0,
       "gwg": 1,
-      "shots": 33,
-      "hits": 32
+      "shots": 37,
+      "hits": 33
      },
      {
       "nom": "Matt Dumba",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 8,
       "pts": 10,
@@ -777,20 +777,20 @@
      },
      {
       "nom": "Caleb Jones",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 9,
       "pts": 10,
-      "plusminus": 14,
-      "pim": 48,
+      "plusminus": 13,
+      "pim": 50,
       "ppg": 0,
       "gwg": 1,
-      "shots": 37,
-      "hits": 49
+      "shots": 39,
+      "hits": 50
      },
      {
       "nom": "Filip Forsberg",
-      "gp": 18,
+      "gp": 19,
       "goals": 4,
       "assists": 3,
       "pts": 7,
@@ -799,24 +799,24 @@
       "ppg": 0,
       "gwg": 1,
       "shots": 27,
-      "hits": 17
+      "hits": 19
      },
      {
       "nom": "Andrew Mangiapane",
-      "gp": 20,
-      "goals": 0,
+      "gp": 21,
+      "goals": 1,
       "assists": 4,
-      "pts": 4,
+      "pts": 5,
       "plusminus": -4,
       "pim": 16,
-      "ppg": 0,
-      "gwg": 0,
-      "shots": 13,
+      "ppg": 1,
+      "gwg": 1,
+      "shots": 14,
       "hits": 4
      },
      {
       "nom": "Casey Cizikas",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 1,
       "pts": 2,
@@ -825,11 +825,11 @@
       "ppg": 0,
       "gwg": 0,
       "shots": 10,
-      "hits": 13
+      "hits": 14
      },
      {
       "nom": "Blake Lizotte",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 0,
       "pts": 1,
@@ -870,15 +870,15 @@
     "gardiens": [
      {
       "nom": "Joel Hofer",
-      "gp": 9,
+      "gp": 10,
       "pim": 0,
-      "w": 3,
+      "w": 4,
       "l": 2,
       "t": 2,
-      "avg": 4.77,
-      "svpct": 0.837,
+      "avg": 4.24,
+      "svpct": 0.849,
       "so": 0,
-      "mp": 365
+      "mp": 425
      },
      {
       "nom": "Joel Blomqvist",
@@ -895,151 +895,151 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:57:04.966Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Andrew Mangiapane",
       "pos": "RW",
-      "gp": 20,
-      "goals": 0,
+      "gp": 21,
+      "goals": 1,
       "assists": 4,
-      "pts": 4,
-      "shots": 13,
+      "pts": 5,
+      "shots": 14,
       "pim": 16,
-      "mp": 90,
+      "mp": 94,
       "hits": 4
      },
      {
       "nom": "Anthony Cirelli",
       "pos": "LW",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
       "assists": 6,
       "pts": 13,
-      "shots": 42,
+      "shots": 43,
       "pim": 10,
-      "mp": 320,
+      "mp": 337,
       "hits": 17
      },
      {
       "nom": "Artem Zub",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 4,
       "assists": 13,
       "pts": 17,
-      "shots": 32,
-      "pim": 17,
-      "mp": 444,
-      "hits": 36
+      "shots": 35,
+      "pim": 19,
+      "mp": 467,
+      "hits": 39
      },
      {
       "nom": "Ben Thomas",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 7,
       "pts": 10,
       "shots": 27,
       "pim": 26,
-      "mp": 515,
-      "hits": 63
+      "mp": 538,
+      "hits": 65
      },
      {
       "nom": "Blake Lizotte",
       "pos": "LW",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 0,
       "pts": 1,
       "shots": 4,
       "pim": 12,
-      "mp": 95,
+      "mp": 98,
       "hits": 3
      },
      {
       "nom": "Brad Marchand",
       "pos": "LW",
-      "gp": 21,
+      "gp": 22,
       "goals": 9,
       "assists": 11,
       "pts": 20,
-      "shots": 52,
-      "pim": 40,
-      "mp": 392,
-      "hits": 37
+      "shots": 54,
+      "pim": 42,
+      "mp": 407,
+      "hits": 39
      },
      {
       "nom": "Brock Boeser",
       "pos": "RW",
-      "gp": 19,
+      "gp": 20,
       "goals": 8,
-      "assists": 9,
-      "pts": 17,
-      "shots": 48,
+      "assists": 10,
+      "pts": 18,
+      "shots": 49,
       "pim": 8,
-      "mp": 411,
-      "hits": 40
+      "mp": 433,
+      "hits": 42
      },
      {
       "nom": "Caleb Jones",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 9,
       "pts": 10,
-      "shots": 37,
-      "pim": 48,
-      "mp": 440,
-      "hits": 49
+      "shots": 39,
+      "pim": 50,
+      "mp": 465,
+      "hits": 50
      },
      {
       "nom": "Casey Cizikas",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 1,
       "pts": 2,
       "shots": 10,
       "pim": 6,
-      "mp": 92,
-      "hits": 13
+      "mp": 95,
+      "hits": 14
      },
      {
       "nom": "Cody Ceci",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 8,
       "pts": 10,
-      "shots": 33,
+      "shots": 37,
       "pim": 6,
-      "mp": 400,
-      "hits": 32
+      "mp": 416,
+      "hits": 33
      },
      {
       "nom": "Filip Forsberg",
       "pos": "C",
-      "gp": 18,
+      "gp": 19,
       "goals": 4,
       "assists": 3,
       "pts": 7,
       "shots": 27,
       "pim": 6,
-      "mp": 242,
-      "hits": 17
+      "mp": 253,
+      "hits": 19
      },
      {
       "nom": "J.G. Pageau",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 9,
       "pts": 11,
-      "shots": 19,
+      "shots": 23,
       "pim": 6,
-      "mp": 270,
+      "mp": 286,
       "hits": 28
      },
      {
@@ -1057,14 +1057,14 @@
      {
       "nom": "Jake McCabe",
       "pos": "D",
-      "gp": 18,
+      "gp": 19,
       "goals": 3,
       "assists": 7,
       "pts": 10,
       "shots": 32,
       "pim": 2,
-      "mp": 329,
-      "hits": 26
+      "mp": 351,
+      "hits": 30
      },
      {
       "nom": "Joel Blomqvist",
@@ -1083,7 +1083,7 @@
      {
       "nom": "Joel Hofer",
       "pos": "G",
-      "gp": 9,
+      "gp": 10,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -1091,55 +1091,55 @@
       "pim": 0,
       "mp": 0,
       "hits": 0,
-      "qg": 2,
+      "qg": 3,
       "hs": 1
      },
      {
       "nom": "Jordan Kyrou",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 9,
       "assists": 15,
       "pts": 24,
-      "shots": 62,
+      "shots": 64,
       "pim": 12,
-      "mp": 443,
-      "hits": 9
+      "mp": 466,
+      "hits": 10
      },
      {
       "nom": "Matt Duchene",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 12,
-      "assists": 17,
-      "pts": 29,
-      "shots": 72,
+      "assists": 20,
+      "pts": 32,
+      "shots": 76,
       "pim": 2,
-      "mp": 419,
+      "mp": 442,
       "hits": 30
      },
      {
       "nom": "Matt Dumba",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 8,
       "pts": 10,
       "shots": 35,
       "pim": 20,
-      "mp": 350,
+      "mp": 359,
       "hits": 32
      },
      {
       "nom": "Patrick Laine",
       "pos": "RW",
-      "gp": 21,
-      "goals": 9,
+      "gp": 22,
+      "goals": 10,
       "assists": 14,
-      "pts": 23,
-      "shots": 65,
-      "pim": 4,
-      "mp": 494,
+      "pts": 24,
+      "shots": 69,
+      "pim": 16,
+      "mp": 511,
       "hits": 28
      },
      {
@@ -1157,55 +1157,55 @@
      {
       "nom": "Tim Bozon",
       "pos": "LW",
-      "gp": 21,
-      "goals": 9,
-      "assists": 8,
-      "pts": 17,
-      "shots": 57,
+      "gp": 22,
+      "goals": 10,
+      "assists": 10,
+      "pts": 20,
+      "shots": 58,
       "pim": 6,
-      "mp": 456,
-      "hits": 30
+      "mp": 476,
+      "hits": 33
      }
     ]
    },
    "reprises": []
   },
   "MONTREAL": {
-   "genere": "2026-11-26T08:57:21.952Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "MONTREAL",
-   "fiche": "MONTREAL 10-8-2",
+   "fiche": "MONTREAL 11-9-2",
    "pointage": {
-    "releve": "2026-11-26T08:57:21.952Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Logan Cooley",
-      "gp": 20,
+      "gp": 22,
       "goals": 9,
-      "assists": 15,
-      "pts": 24,
-      "plusminus": 3,
+      "assists": 16,
+      "pts": 25,
+      "plusminus": 2,
       "pim": 10,
       "ppg": 3,
       "gwg": 0,
-      "shots": 42,
-      "hits": 16
+      "shots": 43,
+      "hits": 18
      },
      {
       "nom": "Clayton Keller",
-      "gp": 20,
+      "gp": 22,
       "goals": 5,
       "assists": 17,
       "pts": 22,
-      "plusminus": 3,
+      "plusminus": 2,
       "pim": 2,
       "ppg": 0,
       "gwg": 1,
-      "shots": 44,
-      "hits": 9
+      "shots": 45,
+      "hits": 12
      },
      {
       "nom": "Matthew Savoie",
-      "gp": 20,
+      "gp": 22,
       "goals": 11,
       "assists": 9,
       "pts": 20,
@@ -1213,86 +1213,86 @@
       "pim": 12,
       "ppg": 1,
       "gwg": 1,
-      "shots": 38,
-      "hits": 23
+      "shots": 44,
+      "hits": 26
      },
      {
       "nom": "Nikita Kucherov",
-      "gp": 18,
-      "goals": 5,
+      "gp": 20,
+      "goals": 6,
       "assists": 11,
-      "pts": 16,
+      "pts": 17,
       "plusminus": 3,
       "pim": 13,
       "ppg": 0,
-      "gwg": 1,
-      "shots": 39,
-      "hits": 20
+      "gwg": 2,
+      "shots": 45,
+      "hits": 24
      },
      {
       "nom": "Matthew Beniers",
-      "gp": 20,
+      "gp": 22,
       "goals": 7,
-      "assists": 7,
-      "pts": 14,
+      "assists": 8,
+      "pts": 15,
       "plusminus": 1,
       "pim": 12,
       "ppg": 2,
       "gwg": 1,
-      "shots": 49,
-      "hits": 40
+      "shots": 52,
+      "hits": 44
      },
      {
       "nom": "Travis Konecny",
-      "gp": 18,
+      "gp": 20,
       "goals": 6,
-      "assists": 7,
-      "pts": 13,
-      "plusminus": 1,
-      "pim": 10,
+      "assists": 8,
+      "pts": 14,
+      "plusminus": 0,
+      "pim": 12,
       "ppg": 0,
       "gwg": 0,
-      "shots": 48,
-      "hits": 36
+      "shots": 53,
+      "hits": 42
      },
      {
       "nom": "Victor Hedman",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
-      "assists": 12,
-      "pts": 13,
+      "assists": 13,
+      "pts": 14,
       "plusminus": 2,
       "pim": 10,
       "ppg": 0,
       "gwg": 0,
-      "shots": 24,
-      "hits": 22
+      "shots": 28,
+      "hits": 24
      },
      {
       "nom": "Ridly Greig",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 9,
       "pts": 12,
-      "plusminus": 3,
+      "plusminus": 0,
       "pim": 12,
       "ppg": 1,
       "gwg": 0,
-      "shots": 23,
-      "hits": 20
+      "shots": 26,
+      "hits": 24
      },
      {
       "nom": "Kiefer Sherwood",
-      "gp": 20,
+      "gp": 22,
       "goals": 5,
       "assists": 6,
       "pts": 11,
-      "plusminus": -3,
-      "pim": 11,
+      "plusminus": -5,
+      "pim": 13,
       "ppg": 1,
       "gwg": 0,
-      "shots": 26,
-      "hits": 39
+      "shots": 30,
+      "hits": 43
      },
      {
       "nom": "Tij Iginla",
@@ -1309,72 +1309,85 @@
      },
      {
       "nom": "Adrian Kempe",
-      "gp": 17,
+      "gp": 19,
       "goals": 4,
       "assists": 4,
       "pts": 8,
-      "plusminus": -3,
-      "pim": 7,
+      "plusminus": -5,
+      "pim": 11,
       "ppg": 0,
       "gwg": 0,
-      "shots": 22,
-      "hits": 34
+      "shots": 27,
+      "hits": 40
      },
      {
       "nom": "Charlie Stramel",
-      "gp": 20,
+      "gp": 22,
       "goals": 4,
       "assists": 4,
       "pts": 8,
-      "plusminus": 4,
+      "plusminus": 3,
       "pim": 12,
       "ppg": 1,
       "gwg": 1,
       "shots": 10,
-      "hits": 11
+      "hits": 13
      },
      {
       "nom": "Anton Silayev",
-      "gp": 20,
+      "gp": 22,
       "goals": 2,
       "assists": 4,
       "pts": 6,
-      "plusminus": 1,
+      "plusminus": 0,
       "pim": 20,
       "ppg": 1,
       "gwg": 0,
-      "shots": 21,
-      "hits": 44
-     },
-     {
-      "nom": "Gabriel Carlsson",
-      "gp": 20,
-      "goals": 1,
-      "assists": 5,
-      "pts": 6,
-      "plusminus": 3,
-      "pim": 2,
-      "ppg": 0,
-      "gwg": 1,
-      "shots": 21,
+      "shots": 23,
       "hits": 48
      },
      {
+      "nom": "Gabriel Carlsson",
+      "gp": 22,
+      "goals": 1,
+      "assists": 5,
+      "pts": 6,
+      "plusminus": 1,
+      "pim": 2,
+      "ppg": 0,
+      "gwg": 1,
+      "shots": 24,
+      "hits": 53
+     },
+     {
       "nom": "Zach Whitecloud",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
       "assists": 4,
       "pts": 5,
-      "plusminus": 0,
-      "pim": 4,
+      "plusminus": -2,
+      "pim": 6,
       "ppg": 0,
       "gwg": 1,
-      "shots": 20,
-      "hits": 47
+      "shots": 21,
+      "hits": 53
+     },
+     {
+      "nom": "Bowen Byram",
+      "gp": 21,
+      "goals": 2,
+      "assists": 2,
+      "pts": 4,
+      "plusminus": -2,
+      "pim": 6,
+      "ppg": 0,
+      "gwg": 1,
+      "shots": 27,
+      "hits": 29
      },
      {
       "nom": "Jarret Tyszka",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 0,
       "pts": 3,
@@ -1383,42 +1396,29 @@
       "ppg": 0,
       "gwg": 1,
       "shots": 20,
-      "hits": 41
-     },
-     {
-      "nom": "Bowen Byram",
-      "gp": 19,
-      "goals": 1,
-      "assists": 2,
-      "pts": 3,
-      "plusminus": -1,
-      "pim": 4,
-      "ppg": 0,
-      "gwg": 1,
-      "shots": 23,
-      "hits": 27
+      "hits": 46
      },
      {
       "nom": "Steven Stamkos",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
       "assists": 2,
       "pts": 3,
-      "plusminus": -4,
+      "plusminus": -5,
       "pim": 7,
       "ppg": 0,
       "gwg": 0,
-      "shots": 22,
-      "hits": 10
+      "shots": 23,
+      "hits": 12
      },
      {
       "nom": "Justin Barron",
-      "gp": 7,
+      "gp": 9,
       "goals": 0,
       "assists": 2,
       "pts": 2,
-      "plusminus": 2,
-      "pim": 2,
+      "plusminus": 0,
+      "pim": 4,
       "ppg": 0,
       "gwg": 0,
       "shots": 1,
@@ -1453,57 +1453,57 @@
      },
      {
       "nom": "Magnus Chrona",
-      "gp": 16,
+      "gp": 18,
       "pim": 0,
-      "w": 7,
-      "l": 7,
+      "w": 8,
+      "l": 8,
       "t": 2,
-      "avg": 3.5,
+      "avg": 3.44,
       "svpct": 0.879,
       "so": 0,
-      "mp": 824
+      "mp": 941
      },
      {
       "nom": "Erik Portillo",
-      "gp": 9,
+      "gp": 10,
       "pim": 0,
       "w": 3,
       "l": 1,
       "t": 0,
-      "avg": 3.9,
-      "svpct": 0.864,
+      "avg": 3.87,
+      "svpct": 0.865,
       "so": 1,
-      "mp": 369
+      "mp": 372
      }
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:57:21.952Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Adrian Kempe",
       "pos": "LW",
-      "gp": 17,
+      "gp": 19,
       "goals": 4,
       "assists": 4,
       "pts": 8,
-      "shots": 22,
-      "pim": 7,
-      "mp": 229,
-      "hits": 34
+      "shots": 27,
+      "pim": 11,
+      "mp": 256,
+      "hits": 40
      },
      {
       "nom": "Anton Silayev",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 2,
       "assists": 4,
       "pts": 6,
-      "shots": 21,
+      "shots": 23,
       "pim": 20,
-      "mp": 392,
-      "hits": 44
+      "mp": 420,
+      "hits": 48
      },
      {
       "nom": "Artyom Duda",
@@ -1520,43 +1520,43 @@
      {
       "nom": "Bowen Byram",
       "pos": "D",
-      "gp": 19,
-      "goals": 1,
+      "gp": 21,
+      "goals": 2,
       "assists": 2,
-      "pts": 3,
-      "shots": 23,
-      "pim": 4,
-      "mp": 331,
-      "hits": 27
+      "pts": 4,
+      "shots": 27,
+      "pim": 6,
+      "mp": 371,
+      "hits": 29
      },
      {
       "nom": "Charlie Stramel",
       "pos": "RW",
-      "gp": 20,
+      "gp": 22,
       "goals": 4,
       "assists": 4,
       "pts": 8,
       "shots": 10,
       "pim": 12,
-      "mp": 134,
-      "hits": 11
+      "mp": 146,
+      "hits": 13
      },
      {
       "nom": "Clayton Keller",
       "pos": "RW",
-      "gp": 20,
+      "gp": 22,
       "goals": 5,
       "assists": 17,
       "pts": 22,
-      "shots": 44,
+      "shots": 45,
       "pim": 2,
-      "mp": 356,
-      "hits": 9
+      "mp": 395,
+      "hits": 12
      },
      {
       "nom": "Erik Portillo",
       "pos": "G",
-      "gp": 9,
+      "gp": 10,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -1564,73 +1564,73 @@
       "pim": 0,
       "mp": 0,
       "hits": 0,
-      "qg": 3,
+      "qg": 4,
       "hs": 0
      },
      {
       "nom": "Gabriel Carlsson",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
       "assists": 5,
       "pts": 6,
-      "shots": 21,
+      "shots": 24,
       "pim": 2,
-      "mp": 405,
-      "hits": 48
+      "mp": 443,
+      "hits": 53
      },
      {
       "nom": "Jarret Tyszka",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 0,
       "pts": 3,
       "shots": 20,
       "pim": 10,
-      "mp": 365,
-      "hits": 41
+      "mp": 402,
+      "hits": 46
      },
      {
       "nom": "Justin Barron",
       "pos": "D",
-      "gp": 7,
+      "gp": 9,
       "goals": 0,
       "assists": 2,
       "pts": 2,
       "shots": 1,
-      "pim": 2,
-      "mp": 33,
+      "pim": 4,
+      "mp": 52,
       "hits": 2
      },
      {
       "nom": "Kiefer Sherwood",
       "pos": "RW",
-      "gp": 20,
+      "gp": 22,
       "goals": 5,
       "assists": 6,
       "pts": 11,
-      "shots": 26,
-      "pim": 11,
-      "mp": 298,
-      "hits": 39
+      "shots": 30,
+      "pim": 13,
+      "mp": 323,
+      "hits": 43
      },
      {
       "nom": "Logan Cooley",
       "pos": "LW",
-      "gp": 20,
+      "gp": 22,
       "goals": 9,
-      "assists": 15,
-      "pts": 24,
-      "shots": 42,
+      "assists": 16,
+      "pts": 25,
+      "shots": 43,
       "pim": 10,
-      "mp": 387,
-      "hits": 16
+      "mp": 411,
+      "hits": 18
      },
      {
       "nom": "Magnus Chrona",
       "pos": "G",
-      "gp": 16,
+      "gp": 18,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -1638,44 +1638,44 @@
       "pim": 0,
       "mp": 0,
       "hits": 0,
-      "qg": 5,
+      "qg": 6,
       "hs": 1
      },
      {
       "nom": "Matthew Beniers",
       "pos": "LW",
-      "gp": 20,
+      "gp": 22,
       "goals": 7,
-      "assists": 7,
-      "pts": 14,
-      "shots": 49,
+      "assists": 8,
+      "pts": 15,
+      "shots": 52,
       "pim": 12,
-      "mp": 425,
-      "hits": 40
+      "mp": 469,
+      "hits": 44
      },
      {
       "nom": "Matthew Savoie",
       "pos": "C",
-      "gp": 20,
+      "gp": 22,
       "goals": 11,
       "assists": 9,
       "pts": 20,
-      "shots": 38,
+      "shots": 44,
       "pim": 12,
-      "mp": 365,
-      "hits": 23
+      "mp": 409,
+      "hits": 26
      },
      {
       "nom": "Nikita Kucherov",
       "pos": "RW",
-      "gp": 18,
-      "goals": 5,
+      "gp": 20,
+      "goals": 6,
       "assists": 11,
-      "pts": 16,
-      "shots": 39,
+      "pts": 17,
+      "shots": 45,
       "pim": 13,
-      "mp": 355,
-      "hits": 20
+      "mp": 396,
+      "hits": 24
      },
      {
       "nom": "Petr Mrazek",
@@ -1694,26 +1694,26 @@
      {
       "nom": "Ridly Greig",
       "pos": "C",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 9,
       "pts": 12,
-      "shots": 23,
+      "shots": 26,
       "pim": 12,
-      "mp": 190,
-      "hits": 20
+      "mp": 218,
+      "hits": 24
      },
      {
       "nom": "Steven Stamkos",
       "pos": "C",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
       "assists": 2,
       "pts": 3,
-      "shots": 22,
+      "shots": 23,
       "pim": 7,
-      "mp": 217,
-      "hits": 10
+      "mp": 244,
+      "hits": 12
      },
      {
       "nom": "Tij Iginla",
@@ -1730,105 +1730,105 @@
      {
       "nom": "Travis Konecny",
       "pos": "LW",
-      "gp": 18,
+      "gp": 20,
       "goals": 6,
-      "assists": 7,
-      "pts": 13,
-      "shots": 48,
-      "pim": 10,
-      "mp": 376,
-      "hits": 36
+      "assists": 8,
+      "pts": 14,
+      "shots": 53,
+      "pim": 12,
+      "mp": 420,
+      "hits": 42
      },
      {
       "nom": "Victor Hedman",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
-      "assists": 12,
-      "pts": 13,
-      "shots": 24,
+      "assists": 13,
+      "pts": 14,
+      "shots": 28,
       "pim": 10,
-      "mp": 488,
-      "hits": 22
+      "mp": 530,
+      "hits": 24
      },
      {
       "nom": "Zach Whitecloud",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
       "assists": 4,
       "pts": 5,
-      "shots": 20,
-      "pim": 4,
-      "mp": 317,
-      "hits": 47
+      "shots": 21,
+      "pim": 6,
+      "mp": 347,
+      "hits": 53
      }
     ]
    },
    "reprises": []
   },
   "VANCOUVER": {
-   "genere": "2026-11-26T08:57:38.334Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "VANCOUVER",
-   "fiche": "VANCOUVER 5-14-1",
+   "fiche": "VANCOUVER 5-15-1",
    "pointage": {
-    "releve": "2026-11-26T08:57:38.334Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Owen Tippett",
-      "gp": 20,
+      "gp": 21,
       "goals": 9,
       "assists": 9,
       "pts": 18,
-      "plusminus": -11,
+      "plusminus": -13,
       "pim": 2,
       "ppg": 2,
       "gwg": 1,
-      "shots": 50,
-      "hits": 39
+      "shots": 52,
+      "hits": 41
      },
      {
       "nom": "Conor Geekie",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
-      "assists": 13,
-      "pts": 17,
-      "plusminus": 1,
-      "pim": 18,
+      "assists": 14,
+      "pts": 18,
+      "plusminus": -1,
+      "pim": 25,
       "ppg": 0,
       "gwg": 0,
-      "shots": 45,
-      "hits": 24
+      "shots": 46,
+      "hits": 26
      },
      {
       "nom": "Joakim Kemell",
-      "gp": 20,
+      "gp": 21,
       "goals": 7,
-      "assists": 8,
-      "pts": 15,
+      "assists": 9,
+      "pts": 16,
       "plusminus": -11,
       "pim": 6,
       "ppg": 1,
       "gwg": 1,
-      "shots": 60,
-      "hits": 33
+      "shots": 61,
+      "hits": 35
      },
      {
       "nom": "Joseph Veleno",
-      "gp": 20,
-      "goals": 3,
+      "gp": 21,
+      "goals": 4,
       "assists": 12,
-      "pts": 15,
-      "plusminus": -14,
-      "pim": 6,
+      "pts": 16,
+      "plusminus": -16,
+      "pim": 8,
       "ppg": 0,
       "gwg": 1,
-      "shots": 51,
-      "hits": 24
+      "shots": 55,
+      "hits": 27
      },
      {
       "nom": "Brett Berard",
-      "gp": 16,
+      "gp": 17,
       "goals": 1,
       "assists": 12,
       "pts": 13,
@@ -1836,7 +1836,7 @@
       "pim": 28,
       "ppg": 0,
       "gwg": 0,
-      "shots": 34,
+      "shots": 35,
       "hits": 23
      },
      {
@@ -1854,7 +1854,7 @@
      },
      {
       "nom": "Kieffer Bellows",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 7,
       "pts": 12,
@@ -1867,85 +1867,85 @@
      },
      {
       "nom": "Daniil But",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 6,
       "pts": 11,
-      "plusminus": 1,
+      "plusminus": -1,
       "pim": 22,
       "ppg": 1,
       "gwg": 0,
-      "shots": 39,
-      "hits": 25
+      "shots": 40,
+      "hits": 29
      },
      {
       "nom": "Valeri Nichushkin",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 7,
       "pts": 11,
-      "plusminus": -6,
+      "plusminus": -8,
       "pim": 6,
       "ppg": 0,
       "gwg": 0,
-      "shots": 47,
+      "shots": 49,
       "hits": 28
      },
      {
       "nom": "Liam Ohgren",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 4,
       "pts": 9,
       "plusminus": 3,
-      "pim": 8,
+      "pim": 10,
       "ppg": 1,
       "gwg": 0,
-      "shots": 29,
+      "shots": 30,
       "hits": 13
      },
      {
       "nom": "Jacob Truscott",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 5,
       "pts": 9,
-      "plusminus": 4,
-      "pim": 29,
+      "plusminus": 2,
+      "pim": 34,
       "ppg": 0,
       "gwg": 1,
-      "shots": 42,
-      "hits": 38
+      "shots": 44,
+      "hits": 40
      },
      {
       "nom": "Simon Edvinsson",
-      "gp": 20,
+      "gp": 21,
       "goals": 3,
-      "assists": 5,
-      "pts": 8,
-      "plusminus": -13,
+      "assists": 6,
+      "pts": 9,
+      "plusminus": -15,
       "pim": 16,
       "ppg": 0,
       "gwg": 0,
       "shots": 35,
-      "hits": 18
+      "hits": 19
      },
      {
       "nom": "Dougie Hamilton",
-      "gp": 20,
-      "goals": 3,
+      "gp": 21,
+      "goals": 4,
       "assists": 3,
-      "pts": 6,
-      "plusminus": -4,
-      "pim": 8,
+      "pts": 7,
+      "plusminus": -6,
+      "pim": 10,
       "ppg": 0,
       "gwg": 1,
-      "shots": 38,
-      "hits": 26
+      "shots": 39,
+      "hits": 27
      },
      {
       "nom": "Caleb Desnoyers",
-      "gp": 15,
+      "gp": 16,
       "goals": 2,
       "assists": 3,
       "pts": 5,
@@ -1954,24 +1954,24 @@
       "ppg": 0,
       "gwg": 0,
       "shots": 24,
-      "hits": 9
+      "hits": 10
      },
      {
       "nom": "Thomas Bordeleau",
-      "gp": 10,
+      "gp": 11,
       "goals": 0,
       "assists": 3,
       "pts": 3,
-      "plusminus": -1,
+      "plusminus": -3,
       "pim": 4,
       "ppg": 0,
       "gwg": 0,
-      "shots": 10,
-      "hits": 4
+      "shots": 11,
+      "hits": 5
      },
      {
       "nom": "Jared McIsaac",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
       "assists": 3,
       "pts": 3,
@@ -1980,24 +1980,37 @@
       "ppg": 0,
       "gwg": 0,
       "shots": 19,
-      "hits": 60
+      "hits": 64
      },
      {
-      "nom": "Stian Stolberg",
-      "gp": 18,
+      "nom": "Elias Salomonsson",
+      "gp": 21,
       "goals": 0,
-      "assists": 2,
-      "pts": 2,
-      "plusminus": 2,
-      "pim": 12,
+      "assists": 3,
+      "pts": 3,
+      "plusminus": -2,
+      "pim": 6,
       "ppg": 0,
       "gwg": 0,
       "shots": 14,
-      "hits": 35
+      "hits": 16
+     },
+     {
+      "nom": "Stian Stolberg",
+      "gp": 19,
+      "goals": 0,
+      "assists": 2,
+      "pts": 2,
+      "plusminus": 0,
+      "pim": 12,
+      "ppg": 0,
+      "gwg": 0,
+      "shots": 15,
+      "hits": 36
      },
      {
       "nom": "Jacob Cederholm",
-      "gp": 20,
+      "gp": 21,
       "goals": 2,
       "assists": 0,
       "pts": 2,
@@ -2005,21 +2018,8 @@
       "pim": 30,
       "ppg": 0,
       "gwg": 0,
-      "shots": 23,
-      "hits": 41
-     },
-     {
-      "nom": "Elias Salomonsson",
-      "gp": 20,
-      "goals": 0,
-      "assists": 2,
-      "pts": 2,
-      "plusminus": -2,
-      "pim": 6,
-      "ppg": 0,
-      "gwg": 0,
-      "shots": 14,
-      "hits": 16
+      "shots": 24,
+      "hits": 44
      },
      {
       "nom": "Mikey Anderson",
@@ -2051,104 +2051,104 @@
     "gardiens": [
      {
       "nom": "Lukas Dostal",
-      "gp": 17,
+      "gp": 18,
       "pim": 0,
       "w": 4,
       "l": 11,
       "t": 0,
-      "avg": 4.38,
-      "svpct": 0.861,
+      "avg": 4.4,
+      "svpct": 0.86,
       "so": 0,
-      "mp": 863
+      "mp": 873
      },
      {
       "nom": "Jan Bednar",
-      "gp": 10,
+      "gp": 11,
       "pim": 0,
       "w": 1,
-      "l": 3,
+      "l": 4,
       "t": 1,
-      "avg": 4.56,
-      "svpct": 0.833,
+      "avg": 4.74,
+      "svpct": 0.83,
       "so": 0,
-      "mp": 342
+      "mp": 392
      }
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:57:38.334Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Brett Berard",
       "pos": "RW",
-      "gp": 16,
+      "gp": 17,
       "goals": 1,
       "assists": 12,
       "pts": 13,
-      "shots": 34,
+      "shots": 35,
       "pim": 28,
-      "mp": 264,
+      "mp": 265,
       "hits": 23
      },
      {
       "nom": "Caleb Desnoyers",
       "pos": "C",
-      "gp": 15,
+      "gp": 16,
       "goals": 2,
       "assists": 3,
       "pts": 5,
       "shots": 24,
       "pim": 14,
-      "mp": 171,
-      "hits": 9
+      "mp": 192,
+      "hits": 10
      },
      {
       "nom": "Conor Geekie",
       "pos": "C",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
-      "assists": 13,
-      "pts": 17,
-      "shots": 45,
-      "pim": 18,
-      "mp": 411,
-      "hits": 24
+      "assists": 14,
+      "pts": 18,
+      "shots": 46,
+      "pim": 25,
+      "mp": 429,
+      "hits": 26
      },
      {
       "nom": "Daniil But",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 6,
       "pts": 11,
-      "shots": 39,
+      "shots": 40,
       "pim": 22,
-      "mp": 275,
-      "hits": 25
+      "mp": 289,
+      "hits": 29
      },
      {
       "nom": "Dougie Hamilton",
       "pos": "D",
-      "gp": 20,
-      "goals": 3,
+      "gp": 21,
+      "goals": 4,
       "assists": 3,
-      "pts": 6,
-      "shots": 38,
-      "pim": 8,
-      "mp": 381,
-      "hits": 26
+      "pts": 7,
+      "shots": 39,
+      "pim": 10,
+      "mp": 395,
+      "hits": 27
      },
      {
       "nom": "Elias Salomonsson",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
-      "assists": 2,
-      "pts": 2,
+      "assists": 3,
+      "pts": 3,
       "shots": 14,
       "pim": 6,
-      "mp": 177,
+      "mp": 186,
       "hits": 16
      },
      {
@@ -2166,31 +2166,31 @@
      {
       "nom": "Jacob Cederholm",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 2,
       "assists": 0,
       "pts": 2,
-      "shots": 23,
+      "shots": 24,
       "pim": 30,
-      "mp": 378,
-      "hits": 41
+      "mp": 402,
+      "hits": 44
      },
      {
       "nom": "Jacob Truscott",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 5,
       "pts": 9,
-      "shots": 42,
-      "pim": 29,
-      "mp": 395,
-      "hits": 38
+      "shots": 44,
+      "pim": 34,
+      "mp": 412,
+      "hits": 40
      },
      {
       "nom": "Jan Bednar",
       "pos": "G",
-      "gp": 10,
+      "gp": 11,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -2204,67 +2204,67 @@
      {
       "nom": "Jared McIsaac",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
       "assists": 3,
       "pts": 3,
       "shots": 19,
       "pim": 27,
-      "mp": 392,
-      "hits": 60
+      "mp": 415,
+      "hits": 64
      },
      {
       "nom": "Joakim Kemell",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 7,
-      "assists": 8,
-      "pts": 15,
-      "shots": 60,
+      "assists": 9,
+      "pts": 16,
+      "shots": 61,
       "pim": 6,
-      "mp": 369,
-      "hits": 33
+      "mp": 391,
+      "hits": 35
      },
      {
       "nom": "Joseph Veleno",
       "pos": "C",
-      "gp": 20,
-      "goals": 3,
+      "gp": 21,
+      "goals": 4,
       "assists": 12,
-      "pts": 15,
-      "shots": 51,
-      "pim": 6,
-      "mp": 437,
-      "hits": 24
+      "pts": 16,
+      "shots": 55,
+      "pim": 8,
+      "mp": 459,
+      "hits": 27
      },
      {
       "nom": "Kieffer Bellows",
       "pos": "RW",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 7,
       "pts": 12,
       "shots": 46,
       "pim": 2,
-      "mp": 371,
+      "mp": 389,
       "hits": 47
      },
      {
       "nom": "Liam Ohgren",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 4,
       "pts": 9,
-      "shots": 29,
-      "pim": 8,
-      "mp": 255,
+      "shots": 30,
+      "pim": 10,
+      "mp": 269,
       "hits": 13
      },
      {
       "nom": "Lukas Dostal",
       "pos": "G",
-      "gp": 17,
+      "gp": 18,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -2302,61 +2302,61 @@
      {
       "nom": "Owen Tippett",
       "pos": "RW",
-      "gp": 20,
+      "gp": 21,
       "goals": 9,
       "assists": 9,
       "pts": 18,
-      "shots": 50,
+      "shots": 52,
       "pim": 2,
-      "mp": 374,
-      "hits": 39
+      "mp": 389,
+      "hits": 41
      },
      {
       "nom": "Simon Edvinsson",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 3,
-      "assists": 5,
-      "pts": 8,
+      "assists": 6,
+      "pts": 9,
       "shots": 35,
       "pim": 16,
-      "mp": 377,
-      "hits": 18
+      "mp": 394,
+      "hits": 19
      },
      {
       "nom": "Stian Stolberg",
       "pos": "D",
-      "gp": 18,
+      "gp": 19,
       "goals": 0,
       "assists": 2,
       "pts": 2,
-      "shots": 14,
+      "shots": 15,
       "pim": 12,
-      "mp": 205,
-      "hits": 35
+      "mp": 217,
+      "hits": 36
      },
      {
       "nom": "Thomas Bordeleau",
       "pos": "RW",
-      "gp": 10,
+      "gp": 11,
       "goals": 0,
       "assists": 3,
       "pts": 3,
-      "shots": 10,
+      "shots": 11,
       "pim": 4,
-      "mp": 91,
-      "hits": 4
+      "mp": 104,
+      "hits": 5
      },
      {
       "nom": "Valeri Nichushkin",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 7,
       "pts": 11,
-      "shots": 47,
+      "shots": 49,
       "pim": 6,
-      "mp": 328,
+      "mp": 339,
       "hits": 28
      }
     ]
@@ -2364,132 +2364,132 @@
    "reprises": []
   },
   "WASHINGTON": {
-   "genere": "2026-11-26T08:57:55.502Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "WASHINGTON",
-   "fiche": "WASHINGTON 10-6-4",
+   "fiche": "WASHINGTON 11-7-4",
    "pointage": {
-    "releve": "2026-11-26T08:57:55.502Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Mark Scheifele",
-      "gp": 20,
-      "goals": 7,
-      "assists": 21,
-      "pts": 28,
-      "plusminus": 5,
+      "gp": 22,
+      "goals": 8,
+      "assists": 23,
+      "pts": 31,
+      "plusminus": 7,
       "pim": 8,
       "ppg": 1,
       "gwg": 1,
-      "shots": 49,
-      "hits": 28
+      "shots": 55,
+      "hits": 32
      },
      {
       "nom": "Alexis Lafreniere",
-      "gp": 20,
-      "goals": 9,
+      "gp": 22,
+      "goals": 11,
       "assists": 13,
-      "pts": 22,
-      "plusminus": 5,
+      "pts": 24,
+      "plusminus": 7,
       "pim": 24,
       "ppg": 1,
       "gwg": 2,
-      "shots": 50,
-      "hits": 26
+      "shots": 53,
+      "hits": 28
      },
      {
       "nom": "Vladislav Firstov",
-      "gp": 20,
+      "gp": 22,
       "goals": 7,
-      "assists": 14,
-      "pts": 21,
-      "plusminus": 7,
+      "assists": 15,
+      "pts": 22,
+      "plusminus": 9,
       "pim": 4,
       "ppg": 0,
       "gwg": 3,
-      "shots": 41,
+      "shots": 43,
       "hits": 14
      },
      {
       "nom": "Danton Heinen",
-      "gp": 19,
+      "gp": 21,
       "goals": 7,
-      "assists": 10,
-      "pts": 17,
-      "plusminus": -7,
+      "assists": 12,
+      "pts": 19,
+      "plusminus": -6,
       "pim": 10,
       "ppg": 3,
       "gwg": 1,
-      "shots": 55,
-      "hits": 33
+      "shots": 56,
+      "hits": 34
      },
      {
       "nom": "Sam Colangelo",
-      "gp": 19,
+      "gp": 21,
       "goals": 6,
       "assists": 8,
       "pts": 14,
-      "plusminus": -3,
+      "plusminus": -2,
       "pim": 25,
       "ppg": 1,
       "gwg": 1,
-      "shots": 45,
-      "hits": 30
-     },
-     {
-      "nom": "Cayden Lidstrom",
-      "gp": 20,
-      "goals": 7,
-      "assists": 7,
-      "pts": 14,
-      "plusminus": -2,
-      "pim": 18,
-      "ppg": 4,
-      "gwg": 0,
-      "shots": 36,
+      "shots": 48,
       "hits": 33
      },
      {
+      "nom": "Cayden Lidstrom",
+      "gp": 22,
+      "goals": 7,
+      "assists": 7,
+      "pts": 14,
+      "plusminus": -3,
+      "pim": 20,
+      "ppg": 4,
+      "gwg": 0,
+      "shots": 40,
+      "hits": 36
+     },
+     {
       "nom": "Darren Raddysh",
-      "gp": 18,
+      "gp": 20,
       "goals": 3,
       "assists": 9,
       "pts": 12,
-      "plusminus": 9,
+      "plusminus": 10,
       "pim": 10,
       "ppg": 1,
       "gwg": 0,
-      "shots": 29,
-      "hits": 37
+      "shots": 31,
+      "hits": 42
      },
      {
       "nom": "Emil Andrae",
-      "gp": 20,
+      "gp": 22,
       "goals": 5,
       "assists": 6,
       "pts": 11,
-      "plusminus": -8,
+      "plusminus": -7,
       "pim": 12,
       "ppg": 2,
       "gwg": 1,
-      "shots": 43,
-      "hits": 52
+      "shots": 46,
+      "hits": 57
      },
      {
       "nom": "Josh Norris",
-      "gp": 20,
+      "gp": 22,
       "goals": 8,
       "assists": 2,
       "pts": 10,
       "plusminus": 2,
-      "pim": 8,
+      "pim": 10,
       "ppg": 2,
       "gwg": 0,
-      "shots": 29,
-      "hits": 17
+      "shots": 31,
+      "hits": 22
      },
      {
       "nom": "Ivar Stenberg",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 7,
       "pts": 10,
@@ -2497,28 +2497,28 @@
       "pim": 8,
       "ppg": 0,
       "gwg": 1,
-      "shots": 28,
-      "hits": 13
+      "shots": 30,
+      "hits": 15
      },
      {
       "nom": "Neal Pionk",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
-      "assists": 7,
-      "pts": 8,
-      "plusminus": -1,
-      "pim": 24,
+      "assists": 9,
+      "pts": 10,
+      "plusminus": 1,
+      "pim": 26,
       "ppg": 0,
       "gwg": 0,
-      "shots": 34,
-      "hits": 46
+      "shots": 38,
+      "hits": 49
      },
      {
       "nom": "Axel Sandin-Pellikka",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
-      "assists": 8,
-      "pts": 8,
+      "assists": 9,
+      "pts": 9,
       "plusminus": 3,
       "pim": 13,
       "ppg": 0,
@@ -2528,7 +2528,7 @@
      },
      {
       "nom": "Logan Mailloux",
-      "gp": 18,
+      "gp": 20,
       "goals": 1,
       "assists": 5,
       "pts": 6,
@@ -2536,51 +2536,51 @@
       "pim": 8,
       "ppg": 0,
       "gwg": 0,
-      "shots": 8,
-      "hits": 11
+      "shots": 10,
+      "hits": 14
      },
      {
       "nom": "Michael Rasmussen",
-      "gp": 20,
-      "goals": 3,
+      "gp": 22,
+      "goals": 5,
       "assists": 1,
-      "pts": 4,
-      "plusminus": -2,
+      "pts": 6,
+      "plusminus": 0,
       "pim": 16,
       "ppg": 1,
-      "gwg": 0,
-      "shots": 47,
-      "hits": 56
+      "gwg": 1,
+      "shots": 54,
+      "hits": 63
      },
      {
       "nom": "Andrew Peeke",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 1,
       "pts": 4,
-      "plusminus": -3,
-      "pim": 4,
+      "plusminus": -1,
+      "pim": 6,
       "ppg": 0,
       "gwg": 0,
       "shots": 43,
-      "hits": 54
+      "hits": 58
      },
      {
       "nom": "Francesco Pinelli",
-      "gp": 20,
+      "gp": 22,
       "goals": 0,
       "assists": 3,
       "pts": 3,
       "plusminus": -5,
-      "pim": 4,
+      "pim": 6,
       "ppg": 0,
       "gwg": 0,
-      "shots": 8,
+      "shots": 10,
       "hits": 6
      },
      {
       "nom": "Gavin Hayes",
-      "gp": 4,
+      "gp": 5,
       "goals": 0,
       "assists": 1,
       "pts": 1,
@@ -2588,12 +2588,12 @@
       "pim": 0,
       "ppg": 0,
       "gwg": 0,
-      "shots": 2,
+      "shots": 3,
       "hits": 0
      },
      {
       "nom": "Connor Murphy",
-      "gp": 20,
+      "gp": 22,
       "goals": 0,
       "assists": 1,
       "pts": 1,
@@ -2601,12 +2601,12 @@
       "pim": 4,
       "ppg": 0,
       "gwg": 0,
-      "shots": 18,
-      "hits": 23
+      "shots": 19,
+      "hits": 24
      },
      {
       "nom": "David Goyette",
-      "gp": 18,
+      "gp": 20,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -2621,15 +2621,15 @@
     "gardiens": [
      {
       "nom": "Andrey Vasilevskiy",
-      "gp": 17,
+      "gp": 19,
       "pim": 0,
-      "w": 9,
-      "l": 5,
+      "w": 10,
+      "l": 6,
       "t": 2,
-      "avg": 2.97,
-      "svpct": 0.89,
-      "so": 1,
-      "mp": 910
+      "avg": 2.8,
+      "svpct": 0.896,
+      "so": 2,
+      "mp": 1030
      },
      {
       "nom": "John Gibson",
@@ -2646,37 +2646,37 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:57:55.502Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Alexis Lafreniere",
       "pos": "LW",
-      "gp": 20,
-      "goals": 9,
+      "gp": 22,
+      "goals": 11,
       "assists": 13,
-      "pts": 22,
-      "shots": 50,
+      "pts": 24,
+      "shots": 53,
       "pim": 24,
-      "mp": 453,
-      "hits": 26
+      "mp": 495,
+      "hits": 28
      },
      {
       "nom": "Andrew Peeke",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 1,
       "pts": 4,
       "shots": 43,
-      "pim": 4,
-      "mp": 467,
-      "hits": 54
+      "pim": 6,
+      "mp": 506,
+      "hits": 58
      },
      {
       "nom": "Andrey Vasilevskiy",
       "pos": "G",
-      "gp": 17,
+      "gp": 19,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -2684,128 +2684,128 @@
       "pim": 0,
       "mp": 0,
       "hits": 0,
-      "qg": 7,
+      "qg": 8,
       "hs": 0
      },
      {
       "nom": "Axel Sandin-Pellikka",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
-      "assists": 8,
-      "pts": 8,
+      "assists": 9,
+      "pts": 9,
       "shots": 20,
       "pim": 13,
-      "mp": 386,
+      "mp": 399,
       "hits": 20
      },
      {
       "nom": "Cayden Lidstrom",
       "pos": "LW",
-      "gp": 20,
+      "gp": 22,
       "goals": 7,
       "assists": 7,
       "pts": 14,
-      "shots": 36,
-      "pim": 18,
-      "mp": 370,
-      "hits": 33
+      "shots": 40,
+      "pim": 20,
+      "mp": 403,
+      "hits": 36
      },
      {
       "nom": "Connor Murphy",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 0,
       "assists": 1,
       "pts": 1,
-      "shots": 18,
+      "shots": 19,
       "pim": 4,
-      "mp": 278,
-      "hits": 23
+      "mp": 302,
+      "hits": 24
      },
      {
       "nom": "Danton Heinen",
       "pos": "C",
-      "gp": 19,
+      "gp": 21,
       "goals": 7,
-      "assists": 10,
-      "pts": 17,
-      "shots": 55,
+      "assists": 12,
+      "pts": 19,
+      "shots": 56,
       "pim": 10,
-      "mp": 410,
-      "hits": 33
+      "mp": 448,
+      "hits": 34
      },
      {
       "nom": "Darren Raddysh",
       "pos": "D",
-      "gp": 18,
+      "gp": 20,
       "goals": 3,
       "assists": 9,
       "pts": 12,
-      "shots": 29,
+      "shots": 31,
       "pim": 10,
-      "mp": 299,
-      "hits": 37
+      "mp": 341,
+      "hits": 42
      },
      {
       "nom": "David Goyette",
       "pos": "C",
-      "gp": 18,
+      "gp": 20,
       "goals": 0,
       "assists": 0,
       "pts": 0,
       "shots": 5,
       "pim": 0,
-      "mp": 77,
+      "mp": 82,
       "hits": 3
      },
      {
       "nom": "Emil Andrae",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 5,
       "assists": 6,
       "pts": 11,
-      "shots": 43,
+      "shots": 46,
       "pim": 12,
-      "mp": 457,
-      "hits": 52
+      "mp": 505,
+      "hits": 57
      },
      {
       "nom": "Francesco Pinelli",
       "pos": "RW",
-      "gp": 20,
+      "gp": 22,
       "goals": 0,
       "assists": 3,
       "pts": 3,
-      "shots": 8,
-      "pim": 4,
-      "mp": 144,
+      "shots": 10,
+      "pim": 6,
+      "mp": 159,
       "hits": 6
      },
      {
       "nom": "Gavin Hayes",
       "pos": "RW",
-      "gp": 4,
+      "gp": 5,
       "goals": 0,
       "assists": 1,
       "pts": 1,
-      "shots": 2,
+      "shots": 3,
       "pim": 0,
-      "mp": 26,
+      "mp": 33,
       "hits": 0
      },
      {
       "nom": "Ivar Stenberg",
       "pos": "LW",
-      "gp": 20,
+      "gp": 22,
       "goals": 3,
       "assists": 7,
       "pts": 10,
-      "shots": 28,
+      "shots": 30,
       "pim": 8,
-      "mp": 251,
-      "hits": 13
+      "mp": 268,
+      "hits": 15
      },
      {
       "nom": "John Gibson",
@@ -2824,85 +2824,85 @@
      {
       "nom": "Josh Norris",
       "pos": "C",
-      "gp": 20,
+      "gp": 22,
       "goals": 8,
       "assists": 2,
       "pts": 10,
-      "shots": 29,
-      "pim": 8,
-      "mp": 280,
-      "hits": 17
+      "shots": 31,
+      "pim": 10,
+      "mp": 308,
+      "hits": 22
      },
      {
       "nom": "Logan Mailloux",
       "pos": "D",
-      "gp": 18,
+      "gp": 20,
       "goals": 1,
       "assists": 5,
       "pts": 6,
-      "shots": 8,
+      "shots": 10,
       "pim": 8,
-      "mp": 161,
-      "hits": 11
+      "mp": 195,
+      "hits": 14
      },
      {
       "nom": "Mark Scheifele",
       "pos": "C",
-      "gp": 20,
-      "goals": 7,
-      "assists": 21,
-      "pts": 28,
-      "shots": 49,
+      "gp": 22,
+      "goals": 8,
+      "assists": 23,
+      "pts": 31,
+      "shots": 55,
       "pim": 8,
-      "mp": 454,
-      "hits": 28
+      "mp": 504,
+      "hits": 32
      },
      {
       "nom": "Michael Rasmussen",
       "pos": "LW",
-      "gp": 20,
-      "goals": 3,
+      "gp": 22,
+      "goals": 5,
       "assists": 1,
-      "pts": 4,
-      "shots": 47,
+      "pts": 6,
+      "shots": 54,
       "pim": 16,
-      "mp": 387,
-      "hits": 56
+      "mp": 424,
+      "hits": 63
      },
      {
       "nom": "Neal Pionk",
       "pos": "D",
-      "gp": 20,
+      "gp": 22,
       "goals": 1,
-      "assists": 7,
-      "pts": 8,
-      "shots": 34,
-      "pim": 24,
-      "mp": 398,
-      "hits": 46
+      "assists": 9,
+      "pts": 10,
+      "shots": 38,
+      "pim": 26,
+      "mp": 437,
+      "hits": 49
      },
      {
       "nom": "Sam Colangelo",
       "pos": "RW",
-      "gp": 19,
+      "gp": 21,
       "goals": 6,
       "assists": 8,
       "pts": 14,
-      "shots": 45,
+      "shots": 48,
       "pim": 25,
-      "mp": 321,
-      "hits": 30
+      "mp": 357,
+      "hits": 33
      },
      {
       "nom": "Vladislav Firstov",
       "pos": "RW",
-      "gp": 20,
+      "gp": 22,
       "goals": 7,
-      "assists": 14,
-      "pts": 21,
-      "shots": 41,
+      "assists": 15,
+      "pts": 22,
+      "shots": 43,
       "pim": 4,
-      "mp": 363,
+      "mp": 407,
       "hits": 14
      }
     ]
@@ -2910,11 +2910,11 @@
    "reprises": []
   },
   "NEWJERSEY": {
-   "genere": "2026-11-26T08:58:17.083Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "NEWJERSEY",
    "fiche": "NEWJERSEY 6-13-3",
    "pointage": {
-    "releve": "2026-11-26T08:58:17.083Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Matthew Tkachuk",
@@ -3217,8 +3217,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:58:17.083Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Aaron Ekblad",
@@ -3258,7 +3258,7 @@
      },
      {
       "nom": "Cole Sillinger",
-      "pos": "LW",
+      "pos": "RW",
       "gp": 22,
       "goals": 3,
       "assists": 11,
@@ -3332,7 +3332,7 @@
      },
      {
       "nom": "Joel Farabee",
-      "pos": "RW",
+      "pos": "LW",
       "gp": 22,
       "goals": 9,
       "assists": 7,
@@ -3356,7 +3356,7 @@
      },
      {
       "nom": "Kirill Kaprizov",
-      "pos": "LW",
+      "pos": "RW",
       "gp": 22,
       "goals": 7,
       "assists": 10,
@@ -3380,7 +3380,7 @@
      },
      {
       "nom": "Matthew Tkachuk",
-      "pos": "RW",
+      "pos": "LW",
       "gp": 22,
       "goals": 12,
       "assists": 10,
@@ -3507,11 +3507,11 @@
    "reprises": []
   },
   "ANAHEIM": {
-   "genere": "2026-11-26T08:58:28.136Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "ANAHEIM",
    "fiche": "ANAHEIM 8-10-2",
    "pointage": {
-    "releve": "2026-11-26T08:58:28.136Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Sidney Crosby",
@@ -3776,8 +3776,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:58:28.136Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Alex Tuch",
@@ -4028,11 +4028,11 @@
    "reprises": []
   },
   "CALGARY": {
-   "genere": "2026-11-26T08:58:48.478Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "CALGARY",
    "fiche": "CALGARY 6-10-4",
    "pointage": {
-    "releve": "2026-11-26T08:58:48.478Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Adam Fantilli",
@@ -4361,8 +4361,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:58:48.478Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Adam Fantilli",
@@ -4675,11 +4675,11 @@
    "reprises": []
   },
   "PHILLY": {
-   "genere": "2026-11-26T08:59:04.201Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "PHILLY",
    "fiche": "PHILLY 12-8-0",
    "pointage": {
-    "releve": "2026-11-26T08:59:04.201Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Brady Tkachuk",
@@ -4957,8 +4957,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:59:04.201Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Adam Boqvist",
@@ -5221,11 +5221,11 @@
    "reprises": []
   },
   "VEGAS": {
-   "genere": "2026-11-26T08:59:20.615Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "VEGAS",
    "fiche": "VEGAS 5-12-3",
    "pointage": {
-    "releve": "2026-11-26T08:59:20.615Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Mark Stone",
@@ -5541,8 +5541,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:59:20.615Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Adin Hill",
@@ -5843,11 +5843,11 @@
    "reprises": []
   },
   "CAROLINA": {
-   "genere": "2026-11-26T08:59:37.810Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "CAROLINA",
    "fiche": "CAROLINA 11-10-0",
    "pointage": {
-    "releve": "2026-11-26T08:59:37.810Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Jonathan Drouin",
@@ -6125,8 +6125,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:59:37.810Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "AJ Greer",
@@ -6389,11 +6389,11 @@
    "reprises": []
   },
   "ISLANDERS": {
-   "genere": "2026-11-26T08:59:55.232Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "ISLANDERS",
    "fiche": "ISLANDERS 12-7-3",
    "pointage": {
-    "releve": "2026-11-26T08:59:55.232Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Ivan Demidov",
@@ -6472,19 +6472,6 @@
       "gwg": 0,
       "shots": 63,
       "hits": 28
-     },
-     {
-      "nom": "Roman Josi",
-      "gp": 20,
-      "goals": 1,
-      "assists": 12,
-      "pts": 13,
-      "plusminus": 9,
-      "pim": 32,
-      "ppg": 0,
-      "gwg": 1,
-      "shots": 26,
-      "hits": 29
      },
      {
       "nom": "Nick Paul",
@@ -6576,6 +6563,19 @@
       "gwg": 1,
       "shots": 40,
       "hits": 63
+     },
+     {
+      "nom": "Thomas Harley",
+      "gp": 20,
+      "goals": 2,
+      "assists": 4,
+      "pts": 6,
+      "plusminus": 0,
+      "pim": 8,
+      "ppg": 1,
+      "gwg": 0,
+      "shots": 36,
+      "hits": 23
      },
      {
       "nom": "Janis Jerome Moser",
@@ -6709,8 +6709,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T08:59:55.232Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Alex DeBrincat",
@@ -6923,18 +6923,6 @@
       "hits": 9
      },
      {
-      "nom": "Roman Josi",
-      "pos": "D",
-      "gp": 20,
-      "goals": 1,
-      "assists": 12,
-      "pts": 13,
-      "shots": 26,
-      "pim": 32,
-      "mp": 341,
-      "hits": 29
-     },
-     {
       "nom": "Ryan Leonard",
       "pos": "RW",
       "gp": 22,
@@ -6983,6 +6971,18 @@
       "hits": 28
      },
      {
+      "nom": "Thomas Harley",
+      "pos": "D",
+      "gp": 20,
+      "goals": 2,
+      "assists": 4,
+      "pts": 6,
+      "shots": 36,
+      "pim": 8,
+      "mp": 415,
+      "hits": 23
+     },
+     {
       "nom": "Vincent Desharnais",
       "pos": "D",
       "gp": 22,
@@ -7011,11 +7011,11 @@
    "reprises": []
   },
   "WINNIPEG": {
-   "genere": "2026-11-26T09:00:11.199Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "WINNIPEG",
    "fiche": "WINNIPEG 12-5-3",
    "pointage": {
-    "releve": "2026-11-26T09:00:11.199Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Brayden Point",
@@ -7135,6 +7135,19 @@
       "hits": 29
      },
      {
+      "nom": "Roman Josi",
+      "gp": 20,
+      "goals": 1,
+      "assists": 12,
+      "pts": 13,
+      "plusminus": 9,
+      "pim": 32,
+      "ppg": 0,
+      "gwg": 1,
+      "shots": 26,
+      "hits": 29
+     },
+     {
       "nom": "Matt Roy",
       "gp": 20,
       "goals": 1,
@@ -7198,19 +7211,6 @@
       "gwg": 1,
       "shots": 37,
       "hits": 24
-     },
-     {
-      "nom": "Thomas Harley",
-      "gp": 20,
-      "goals": 2,
-      "assists": 4,
-      "pts": 6,
-      "plusminus": 0,
-      "pim": 8,
-      "ppg": 1,
-      "gwg": 0,
-      "shots": 36,
-      "hits": 23
      },
      {
       "nom": "Blake Coleman",
@@ -7293,8 +7293,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:00:11.199Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Alex Nedeljkovic",
@@ -7517,6 +7517,18 @@
       "hits": 27
      },
      {
+      "nom": "Roman Josi",
+      "pos": "D",
+      "gp": 20,
+      "goals": 1,
+      "assists": 12,
+      "pts": 13,
+      "shots": 26,
+      "pim": 32,
+      "mp": 341,
+      "hits": 29
+     },
+     {
       "nom": "Samu Tuomaala",
       "pos": "RW",
       "gp": 17,
@@ -7527,18 +7539,6 @@
       "pim": 0,
       "mp": 77,
       "hits": 8
-     },
-     {
-      "nom": "Thomas Harley",
-      "pos": "D",
-      "gp": 20,
-      "goals": 2,
-      "assists": 4,
-      "pts": 6,
-      "shots": 36,
-      "pim": 8,
-      "mp": 415,
-      "hits": 23
      },
      {
       "nom": "Tyler Myers",
@@ -7557,11 +7557,11 @@
    "reprises": []
   },
   "SEATTLE": {
-   "genere": "2026-11-26T09:00:28.718Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "SEATTLE",
    "fiche": "SEATTLE 11-7-2",
    "pointage": {
-    "releve": "2026-11-26T09:00:28.718Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "T.J. Tynan",
@@ -7852,8 +7852,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:00:28.718Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Adam Larsson",
@@ -8128,171 +8128,171 @@
    "reprises": []
   },
   "TAMPABAY": {
-   "genere": "2026-11-26T09:00:45.250Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "TAMPABAY",
-   "fiche": "TAMPABAY 13-5-3",
+   "fiche": "TAMPABAY 13-5-4",
    "pointage": {
-    "releve": "2026-11-26T09:00:45.250Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Grigori Denisenko",
-      "gp": 20,
-      "goals": 14,
-      "assists": 16,
-      "pts": 30,
-      "plusminus": 15,
+      "gp": 21,
+      "goals": 15,
+      "assists": 17,
+      "pts": 32,
+      "plusminus": 16,
       "pim": 0,
       "ppg": 6,
       "gwg": 2,
-      "shots": 65,
-      "hits": 20
+      "shots": 68,
+      "hits": 21
      },
      {
       "nom": "Tyson Jost",
-      "gp": 21,
-      "goals": 11,
+      "gp": 22,
+      "goals": 12,
       "assists": 19,
-      "pts": 30,
-      "plusminus": 11,
+      "pts": 31,
+      "plusminus": 12,
       "pim": 8,
       "ppg": 0,
       "gwg": 0,
-      "shots": 58,
-      "hits": 37
-     },
-     {
-      "nom": "Lucas Raymond",
-      "gp": 21,
-      "goals": 9,
-      "assists": 18,
-      "pts": 27,
-      "plusminus": 13,
-      "pim": 8,
-      "ppg": 0,
-      "gwg": 2,
-      "shots": 75,
-      "hits": 18
+      "shots": 62,
+      "hits": 40
      },
      {
       "nom": "Aleksander Barkov",
-      "gp": 19,
-      "goals": 10,
+      "gp": 20,
+      "goals": 11,
       "assists": 16,
-      "pts": 26,
-      "plusminus": 11,
+      "pts": 27,
+      "plusminus": 12,
       "pim": 22,
       "ppg": 1,
       "gwg": 0,
-      "shots": 61,
-      "hits": 32
+      "shots": 64,
+      "hits": 34
+     },
+     {
+      "nom": "Lucas Raymond",
+      "gp": 22,
+      "goals": 9,
+      "assists": 18,
+      "pts": 27,
+      "plusminus": 14,
+      "pim": 8,
+      "ppg": 0,
+      "gwg": 2,
+      "shots": 82,
+      "hits": 19
      },
      {
       "nom": "Jake Neighbours",
-      "gp": 21,
+      "gp": 22,
       "goals": 8,
-      "assists": 15,
-      "pts": 23,
-      "plusminus": 4,
+      "assists": 16,
+      "pts": 24,
+      "plusminus": 5,
       "pim": 25,
       "ppg": 1,
       "gwg": 2,
-      "shots": 41,
-      "hits": 45
+      "shots": 44,
+      "hits": 47
      },
      {
       "nom": "Colby Barlow",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
       "assists": 10,
       "pts": 17,
-      "plusminus": 11,
+      "plusminus": 10,
       "pim": 12,
       "ppg": 0,
       "gwg": 3,
-      "shots": 43,
+      "shots": 45,
       "hits": 29
      },
      {
       "nom": "Owen Power",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 13,
       "pts": 16,
-      "plusminus": 15,
-      "pim": 12,
+      "plusminus": 16,
+      "pim": 18,
       "ppg": 0,
       "gwg": 0,
-      "shots": 32,
+      "shots": 33,
       "hits": 35
      },
      {
       "nom": "Arthur Kaliyev",
-      "gp": 21,
+      "gp": 22,
       "goals": 10,
-      "assists": 4,
-      "pts": 14,
-      "plusminus": 2,
+      "assists": 5,
+      "pts": 15,
+      "plusminus": 3,
       "pim": 2,
       "ppg": 2,
       "gwg": 1,
-      "shots": 48,
+      "shots": 51,
       "hits": 11
      },
      {
       "nom": "Zach Benson",
-      "gp": 17,
+      "gp": 18,
       "goals": 4,
       "assists": 8,
       "pts": 12,
-      "plusminus": 4,
+      "plusminus": 3,
       "pim": 14,
       "ppg": 0,
       "gwg": 0,
-      "shots": 33,
-      "hits": 22
+      "shots": 37,
+      "hits": 24
      },
      {
       "nom": "Dmitry Simachev",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 9,
       "pts": 11,
-      "plusminus": 2,
+      "plusminus": 1,
       "pim": 10,
       "ppg": 0,
       "gwg": 0,
-      "shots": 25,
+      "shots": 26,
       "hits": 20
      },
      {
       "nom": "Rasmus Andersson",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 8,
       "pts": 10,
-      "plusminus": 10,
+      "plusminus": 11,
       "pim": 7,
       "ppg": 0,
       "gwg": 2,
-      "shots": 39,
-      "hits": 33
+      "shots": 41,
+      "hits": 35
      },
      {
       "nom": "Brandt Clarke",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 9,
       "pts": 10,
-      "plusminus": 4,
+      "plusminus": 5,
       "pim": 13,
       "ppg": 0,
       "gwg": 0,
-      "shots": 35,
-      "hits": 18
+      "shots": 37,
+      "hits": 19
      },
      {
       "nom": "Lukas Reichel",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
       "assists": 0,
       "pts": 7,
@@ -8305,20 +8305,20 @@
      },
      {
       "nom": "Jacob Trouba",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 5,
       "pts": 7,
-      "plusminus": 7,
+      "plusminus": 8,
       "pim": 6,
       "ppg": 0,
       "gwg": 0,
-      "shots": 29,
-      "hits": 55
+      "shots": 31,
+      "hits": 59
      },
      {
       "nom": "Andrew Copp",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 6,
       "pts": 6,
@@ -8327,37 +8327,37 @@
       "ppg": 0,
       "gwg": 0,
       "shots": 13,
-      "hits": 11
+      "hits": 12
      },
      {
       "nom": "Jacob de la Rose",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 3,
       "pts": 5,
-      "plusminus": 4,
+      "plusminus": 3,
       "pim": 6,
       "ppg": 0,
       "gwg": 0,
-      "shots": 20,
+      "shots": 24,
       "hits": 45
      },
      {
       "nom": "Owen Pickering",
-      "gp": 19,
+      "gp": 20,
       "goals": 0,
       "assists": 5,
       "pts": 5,
-      "plusminus": 7,
+      "plusminus": 6,
       "pim": 10,
       "ppg": 0,
       "gwg": 0,
       "shots": 7,
-      "hits": 23
+      "hits": 24
      },
      {
       "nom": "Dylan Demelo",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 4,
       "pts": 4,
@@ -8365,8 +8365,8 @@
       "pim": 0,
       "ppg": 0,
       "gwg": 0,
-      "shots": 7,
-      "hits": 20
+      "shots": 8,
+      "hits": 21
      },
      {
       "nom": "Oliver Kapanen",
@@ -8410,15 +8410,15 @@
      },
      {
       "nom": "Oscar Dansk",
-      "gp": 14,
+      "gp": 15,
       "pim": 2,
       "w": 9,
       "l": 4,
-      "t": 0,
-      "avg": 3,
-      "svpct": 0.895,
+      "t": 1,
+      "avg": 2.98,
+      "svpct": 0.898,
       "so": 1,
-      "mp": 760
+      "mp": 825
      },
      {
       "nom": "Trey Augustine",
@@ -8435,92 +8435,92 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:00:45.250Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Aleksander Barkov",
       "pos": "C",
-      "gp": 19,
-      "goals": 10,
+      "gp": 20,
+      "goals": 11,
       "assists": 16,
-      "pts": 26,
-      "shots": 61,
+      "pts": 27,
+      "shots": 64,
       "pim": 22,
-      "mp": 458,
-      "hits": 32
+      "mp": 486,
+      "hits": 34
      },
      {
       "nom": "Andrew Copp",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 6,
       "pts": 6,
       "shots": 13,
       "pim": 4,
-      "mp": 139,
-      "hits": 11
+      "mp": 142,
+      "hits": 12
      },
      {
       "nom": "Arthur Kaliyev",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 10,
-      "assists": 4,
-      "pts": 14,
-      "shots": 48,
+      "assists": 5,
+      "pts": 15,
+      "shots": 51,
       "pim": 2,
-      "mp": 361,
+      "mp": 383,
       "hits": 11
      },
      {
       "nom": "Brandt Clarke",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 9,
       "pts": 10,
-      "shots": 35,
+      "shots": 37,
       "pim": 13,
-      "mp": 314,
-      "hits": 18
+      "mp": 336,
+      "hits": 19
      },
      {
       "nom": "Colby Barlow",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
       "assists": 10,
       "pts": 17,
-      "shots": 43,
+      "shots": 45,
       "pim": 12,
-      "mp": 316,
+      "mp": 332,
       "hits": 29
      },
      {
       "nom": "Dmitry Simachev",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 9,
       "pts": 11,
-      "shots": 25,
+      "shots": 26,
       "pim": 10,
-      "mp": 363,
+      "mp": 377,
       "hits": 20
      },
      {
       "nom": "Dylan Demelo",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 4,
       "pts": 4,
-      "shots": 7,
+      "shots": 8,
       "pim": 0,
-      "mp": 142,
-      "hits": 20
+      "mp": 146,
+      "hits": 21
      },
      {
       "nom": "Ethan Del Mastro",
@@ -8537,50 +8537,50 @@
      {
       "nom": "Grigori Denisenko",
       "pos": "LW",
-      "gp": 20,
-      "goals": 14,
-      "assists": 16,
-      "pts": 30,
-      "shots": 65,
+      "gp": 21,
+      "goals": 15,
+      "assists": 17,
+      "pts": 32,
+      "shots": 68,
       "pim": 0,
-      "mp": 524,
-      "hits": 20
+      "mp": 553,
+      "hits": 21
      },
      {
       "nom": "Jacob Trouba",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 5,
       "pts": 7,
-      "shots": 29,
+      "shots": 31,
       "pim": 6,
-      "mp": 448,
-      "hits": 55
+      "mp": 466,
+      "hits": 59
      },
      {
       "nom": "Jacob de la Rose",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 3,
       "pts": 5,
-      "shots": 20,
+      "shots": 24,
       "pim": 6,
-      "mp": 292,
+      "mp": 304,
       "hits": 45
      },
      {
       "nom": "Jake Neighbours",
       "pos": "LW",
-      "gp": 21,
+      "gp": 22,
       "goals": 8,
-      "assists": 15,
-      "pts": 23,
-      "shots": 41,
+      "assists": 16,
+      "pts": 24,
+      "shots": 44,
       "pim": 25,
-      "mp": 402,
-      "hits": 45
+      "mp": 426,
+      "hits": 47
      },
      {
       "nom": "Jakub Malek",
@@ -8599,25 +8599,25 @@
      {
       "nom": "Lucas Raymond",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 9,
       "assists": 18,
       "pts": 27,
-      "shots": 75,
+      "shots": 82,
       "pim": 8,
-      "mp": 494,
-      "hits": 18
+      "mp": 521,
+      "hits": 19
      },
      {
       "nom": "Lukas Reichel",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
       "assists": 0,
       "pts": 7,
       "shots": 20,
       "pim": 0,
-      "mp": 138,
+      "mp": 143,
       "hits": 5
      },
      {
@@ -8635,7 +8635,7 @@
      {
       "nom": "Oscar Dansk",
       "pos": "G",
-      "gp": 14,
+      "gp": 15,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -8643,44 +8643,44 @@
       "pim": 0,
       "mp": 0,
       "hits": 0,
-      "qg": 5,
-      "hs": 0
+      "qg": 6,
+      "hs": 1
      },
      {
       "nom": "Owen Pickering",
       "pos": "D",
-      "gp": 19,
+      "gp": 20,
       "goals": 0,
       "assists": 5,
       "pts": 5,
       "shots": 7,
       "pim": 10,
-      "mp": 258,
-      "hits": 23
+      "mp": 268,
+      "hits": 24
      },
      {
       "nom": "Owen Power",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 13,
       "pts": 16,
-      "shots": 32,
-      "pim": 12,
-      "mp": 473,
+      "shots": 33,
+      "pim": 18,
+      "mp": 493,
       "hits": 35
      },
      {
       "nom": "Rasmus Andersson",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 2,
       "assists": 8,
       "pts": 10,
-      "shots": 39,
+      "shots": 41,
       "pim": 7,
-      "mp": 375,
-      "hits": 33
+      "mp": 394,
+      "hits": 35
      },
      {
       "nom": "Trey Augustine",
@@ -8699,37 +8699,37 @@
      {
       "nom": "Tyson Jost",
       "pos": "C",
-      "gp": 21,
-      "goals": 11,
+      "gp": 22,
+      "goals": 12,
       "assists": 19,
-      "pts": 30,
-      "shots": 58,
+      "pts": 31,
+      "shots": 62,
       "pim": 8,
-      "mp": 491,
-      "hits": 37
+      "mp": 518,
+      "hits": 40
      },
      {
       "nom": "Zach Benson",
       "pos": "LW",
-      "gp": 17,
+      "gp": 18,
       "goals": 4,
       "assists": 8,
       "pts": 12,
-      "shots": 33,
+      "shots": 37,
       "pim": 14,
-      "mp": 270,
-      "hits": 22
+      "mp": 289,
+      "hits": 24
      }
     ]
    },
    "reprises": []
   },
   "EDMONTON": {
-   "genere": "2026-11-26T09:01:05.028Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "EDMONTON",
    "fiche": "EDMONTON 12-8-0",
    "pointage": {
-    "releve": "2026-11-26T09:01:05.028Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Akil Thomas",
@@ -9032,8 +9032,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:01:05.028Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Akil Thomas",
@@ -9322,11 +9322,11 @@
    "reprises": []
   },
   "PITTSBURGH": {
-   "genere": "2026-11-26T09:01:16.869Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "PITTSBURGH",
    "fiche": "PITTSBURGH 7-11-4",
    "pointage": {
-    "releve": "2026-11-26T09:01:16.869Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Nikolaj Ehlers",
@@ -9668,8 +9668,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:01:16.869Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Andrew Cristall",
@@ -9994,41 +9994,41 @@
    "reprises": []
   },
   "NASHVILLE": {
-   "genere": "2026-11-26T09:01:33.752Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "NASHVILLE",
-   "fiche": "NASHVILLE 8-10-2",
+   "fiche": "NASHVILLE 8-11-2",
    "pointage": {
-    "releve": "2026-11-26T09:01:33.752Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Matthew Coronato",
-      "gp": 20,
+      "gp": 21,
       "goals": 10,
       "assists": 13,
       "pts": 23,
-      "plusminus": -1,
-      "pim": 10,
+      "plusminus": -3,
+      "pim": 12,
       "ppg": 2,
       "gwg": 2,
       "shots": 59,
-      "hits": 27
+      "hits": 29
      },
      {
       "nom": "Jesse Puljujarvi",
-      "gp": 20,
+      "gp": 21,
       "goals": 9,
       "assists": 11,
       "pts": 20,
-      "plusminus": 0,
+      "plusminus": -2,
       "pim": 22,
       "ppg": 0,
       "gwg": 1,
-      "shots": 60,
+      "shots": 63,
       "hits": 18
      },
      {
       "nom": "Kevin Labanc",
-      "gp": 20,
+      "gp": 21,
       "goals": 7,
       "assists": 13,
       "pts": 20,
@@ -10036,38 +10036,38 @@
       "pim": 10,
       "ppg": 2,
       "gwg": 1,
-      "shots": 52,
-      "hits": 25
+      "shots": 53,
+      "hits": 27
      },
      {
       "nom": "Tage Thompson",
-      "gp": 20,
+      "gp": 21,
       "goals": 6,
       "assists": 11,
       "pts": 17,
-      "plusminus": 0,
+      "plusminus": -2,
       "pim": 40,
       "ppg": 1,
       "gwg": 1,
-      "shots": 38,
+      "shots": 42,
       "hits": 12
      },
      {
       "nom": "Noah Hanifin",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 12,
       "pts": 16,
-      "plusminus": 6,
+      "plusminus": 4,
       "pim": 8,
       "ppg": 1,
       "gwg": 0,
       "shots": 33,
-      "hits": 34
+      "hits": 36
      },
      {
       "nom": "Yegor Sharangovich",
-      "gp": 20,
+      "gp": 21,
       "goals": 9,
       "assists": 6,
       "pts": 15,
@@ -10075,38 +10075,38 @@
       "pim": 6,
       "ppg": 1,
       "gwg": 1,
-      "shots": 44,
+      "shots": 45,
       "hits": 27
      },
      {
       "nom": "Mavrik Bourque",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 8,
       "pts": 13,
-      "plusminus": 0,
+      "plusminus": -2,
       "pim": 13,
       "ppg": 2,
       "gwg": 1,
-      "shots": 54,
-      "hits": 28
+      "shots": 56,
+      "hits": 31
      },
      {
       "nom": "Rasmus Kupari",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 7,
       "pts": 12,
-      "plusminus": -4,
+      "plusminus": -6,
       "pim": 4,
       "ppg": 2,
       "gwg": 1,
-      "shots": 29,
-      "hits": 8
+      "shots": 31,
+      "hits": 9
      },
      {
       "nom": "Anthony Duclair",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 8,
       "pts": 12,
@@ -10115,24 +10115,24 @@
       "ppg": 1,
       "gwg": 0,
       "shots": 42,
-      "hits": 29
+      "hits": 31
      },
      {
       "nom": "Vladislav Gavrikov",
-      "gp": 20,
+      "gp": 21,
       "goals": 2,
       "assists": 7,
       "pts": 9,
-      "plusminus": 2,
-      "pim": 10,
+      "plusminus": 1,
+      "pim": 12,
       "ppg": 0,
       "gwg": 0,
-      "shots": 24,
-      "hits": 36
+      "shots": 28,
+      "hits": 40
      },
      {
       "nom": "Christian Dvorak",
-      "gp": 17,
+      "gp": 18,
       "goals": 4,
       "assists": 4,
       "pts": 8,
@@ -10140,8 +10140,8 @@
       "pim": 2,
       "ppg": 1,
       "gwg": 0,
-      "shots": 20,
-      "hits": 9
+      "shots": 21,
+      "hits": 10
      },
      {
       "nom": "Samuel Bolduc",
@@ -10158,7 +10158,7 @@
      },
      {
       "nom": "Jared Spurgeon",
-      "gp": 20,
+      "gp": 21,
       "goals": 1,
       "assists": 6,
       "pts": 7,
@@ -10167,11 +10167,11 @@
       "ppg": 0,
       "gwg": 0,
       "shots": 24,
-      "hits": 13
+      "hits": 14
      },
      {
       "nom": "Nazem Kadri",
-      "gp": 16,
+      "gp": 17,
       "goals": 2,
       "assists": 4,
       "pts": 6,
@@ -10179,25 +10179,25 @@
       "pim": 6,
       "ppg": 0,
       "gwg": 0,
-      "shots": 17,
-      "hits": 11
+      "shots": 18,
+      "hits": 12
      },
      {
       "nom": "Carson Lambos",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
       "assists": 5,
       "pts": 5,
-      "plusminus": -6,
-      "pim": 4,
+      "plusminus": -9,
+      "pim": 6,
       "ppg": 0,
       "gwg": 0,
-      "shots": 16,
-      "hits": 35
+      "shots": 18,
+      "hits": 36
      },
      {
       "nom": "Jesse Pulkkinen",
-      "gp": 17,
+      "gp": 18,
       "goals": 1,
       "assists": 3,
       "pts": 4,
@@ -10205,38 +10205,38 @@
       "pim": 0,
       "ppg": 0,
       "gwg": 0,
-      "shots": 12,
-      "hits": 21
+      "shots": 14,
+      "hits": 24
      },
      {
       "nom": "Henri Jokiharju",
-      "gp": 20,
+      "gp": 21,
       "goals": 1,
       "assists": 3,
       "pts": 4,
-      "plusminus": -4,
+      "plusminus": -6,
       "pim": 12,
       "ppg": 0,
       "gwg": 0,
       "shots": 31,
-      "hits": 24
+      "hits": 25
      },
      {
       "nom": "Michael B-Nygard",
-      "gp": 15,
+      "gp": 16,
       "goals": 0,
       "assists": 3,
       "pts": 3,
-      "plusminus": -4,
-      "pim": 35,
+      "plusminus": -6,
+      "pim": 37,
       "ppg": 0,
       "gwg": 0,
-      "shots": 14,
-      "hits": 15
+      "shots": 16,
+      "hits": 19
      },
      {
       "nom": "Anthony Beauvillier",
-      "gp": 16,
+      "gp": 17,
       "goals": 0,
       "assists": 2,
       "pts": 2,
@@ -10244,7 +10244,7 @@
       "pim": 2,
       "ppg": 0,
       "gwg": 0,
-      "shots": 12,
+      "shots": 13,
       "hits": 9
      },
      {
@@ -10288,21 +10288,21 @@
      },
      {
       "nom": "Ilya Samsonov",
-      "gp": 19,
+      "gp": 20,
       "pim": 0,
       "w": 8,
-      "l": 8,
+      "l": 9,
       "t": 1,
-      "avg": 3.72,
-      "svpct": 0.875,
+      "avg": 3.73,
+      "svpct": 0.873,
       "so": 0,
-      "mp": 1017
+      "mp": 1077
      }
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:01:33.752Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Aidan Hreschuk",
@@ -10319,50 +10319,50 @@
      {
       "nom": "Anthony Beauvillier",
       "pos": "C",
-      "gp": 16,
+      "gp": 17,
       "goals": 0,
       "assists": 2,
       "pts": 2,
-      "shots": 12,
+      "shots": 13,
       "pim": 2,
-      "mp": 139,
+      "mp": 153,
       "hits": 9
      },
      {
       "nom": "Anthony Duclair",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 8,
       "pts": 12,
       "shots": 42,
       "pim": 2,
-      "mp": 374,
-      "hits": 29
+      "mp": 384,
+      "hits": 31
      },
      {
       "nom": "Carson Lambos",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 0,
       "assists": 5,
       "pts": 5,
-      "shots": 16,
-      "pim": 4,
-      "mp": 337,
-      "hits": 35
+      "shots": 18,
+      "pim": 6,
+      "mp": 359,
+      "hits": 36
      },
      {
       "nom": "Christian Dvorak",
       "pos": "RW",
-      "gp": 17,
+      "gp": 18,
       "goals": 4,
       "assists": 4,
       "pts": 8,
-      "shots": 20,
+      "shots": 21,
       "pim": 2,
-      "mp": 155,
-      "hits": 9
+      "mp": 163,
+      "hits": 10
      },
      {
       "nom": "Connor Ingram",
@@ -10381,19 +10381,19 @@
      {
       "nom": "Henri Jokiharju",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 1,
       "assists": 3,
       "pts": 4,
       "shots": 31,
       "pim": 12,
-      "mp": 395,
-      "hits": 24
+      "mp": 416,
+      "hits": 25
      },
      {
       "nom": "Ilya Samsonov",
       "pos": "G",
-      "gp": 19,
+      "gp": 20,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -10407,110 +10407,110 @@
      {
       "nom": "Jared Spurgeon",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 1,
       "assists": 6,
       "pts": 7,
       "shots": 24,
       "pim": 28,
-      "mp": 223,
-      "hits": 13
+      "mp": 236,
+      "hits": 14
      },
      {
       "nom": "Jesse Puljujarvi",
       "pos": "RW",
-      "gp": 20,
+      "gp": 21,
       "goals": 9,
       "assists": 11,
       "pts": 20,
-      "shots": 60,
+      "shots": 63,
       "pim": 22,
-      "mp": 431,
+      "mp": 453,
       "hits": 18
      },
      {
       "nom": "Jesse Pulkkinen",
       "pos": "D",
-      "gp": 17,
+      "gp": 18,
       "goals": 1,
       "assists": 3,
       "pts": 4,
-      "shots": 12,
+      "shots": 14,
       "pim": 0,
-      "mp": 191,
-      "hits": 21
+      "mp": 209,
+      "hits": 24
      },
      {
       "nom": "Kevin Labanc",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 7,
       "assists": 13,
       "pts": 20,
-      "shots": 52,
+      "shots": 53,
       "pim": 10,
-      "mp": 379,
-      "hits": 25
+      "mp": 392,
+      "hits": 27
      },
      {
       "nom": "Matthew Coronato",
       "pos": "RW",
-      "gp": 20,
+      "gp": 21,
       "goals": 10,
       "assists": 13,
       "pts": 23,
       "shots": 59,
-      "pim": 10,
-      "mp": 416,
-      "hits": 27
+      "pim": 12,
+      "mp": 435,
+      "hits": 29
      },
      {
       "nom": "Mavrik Bourque",
       "pos": "C",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 8,
       "pts": 13,
-      "shots": 54,
+      "shots": 56,
       "pim": 13,
-      "mp": 393,
-      "hits": 28
+      "mp": 411,
+      "hits": 31
      },
      {
       "nom": "Michael B-Nygard",
       "pos": "RW",
-      "gp": 15,
+      "gp": 16,
       "goals": 0,
       "assists": 3,
       "pts": 3,
-      "shots": 14,
-      "pim": 35,
-      "mp": 180,
-      "hits": 15
+      "shots": 16,
+      "pim": 37,
+      "mp": 197,
+      "hits": 19
      },
      {
       "nom": "Nazem Kadri",
       "pos": "C",
-      "gp": 16,
+      "gp": 17,
       "goals": 2,
       "assists": 4,
       "pts": 6,
-      "shots": 17,
+      "shots": 18,
       "pim": 6,
-      "mp": 182,
-      "hits": 11
+      "mp": 187,
+      "hits": 12
      },
      {
       "nom": "Noah Hanifin",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 4,
       "assists": 12,
       "pts": 16,
       "shots": 33,
       "pim": 8,
-      "mp": 371,
-      "hits": 34
+      "mp": 393,
+      "hits": 36
      },
      {
       "nom": "Philipp Grubauer",
@@ -10529,14 +10529,14 @@
      {
       "nom": "Rasmus Kupari",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 5,
       "assists": 7,
       "pts": 12,
-      "shots": 29,
+      "shots": 31,
       "pim": 4,
-      "mp": 258,
-      "hits": 8
+      "mp": 277,
+      "hits": 9
      },
      {
       "nom": "Samuel Bolduc",
@@ -10553,37 +10553,37 @@
      {
       "nom": "Tage Thompson",
       "pos": "C",
-      "gp": 20,
+      "gp": 21,
       "goals": 6,
       "assists": 11,
       "pts": 17,
-      "shots": 38,
+      "shots": 42,
       "pim": 40,
-      "mp": 356,
+      "mp": 371,
       "hits": 12
      },
      {
       "nom": "Vladislav Gavrikov",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 2,
       "assists": 7,
       "pts": 9,
-      "shots": 24,
-      "pim": 10,
-      "mp": 438,
-      "hits": 36
+      "shots": 28,
+      "pim": 12,
+      "mp": 463,
+      "hits": 40
      },
      {
       "nom": "Yegor Sharangovich",
       "pos": "LW",
-      "gp": 20,
+      "gp": 21,
       "goals": 9,
       "assists": 6,
       "pts": 15,
-      "shots": 44,
+      "shots": 45,
       "pim": 6,
-      "mp": 382,
+      "mp": 394,
       "hits": 27
      }
     ]
@@ -10591,11 +10591,11 @@
    "reprises": []
   },
   "BUFFALO": {
-   "genere": "2026-11-26T09:01:50.715Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "BUFFALO",
    "fiche": "BUFFALO 9-11-1",
    "pointage": {
-    "releve": "2026-11-26T09:01:50.715Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Jordan Greenway",
@@ -10912,8 +10912,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:01:50.715Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Back Up DD",
@@ -11200,11 +11200,11 @@
    "reprises": []
   },
   "SANJOSE": {
-   "genere": "2026-11-26T09:02:05.718Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "SANJOSE",
    "fiche": "SANJOSE 9-9-2",
    "pointage": {
-    "releve": "2026-11-26T09:02:05.718Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Jaden Schwartz",
@@ -11495,8 +11495,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:02:05.718Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Adam Fox",
@@ -11771,11 +11771,11 @@
    "reprises": []
   },
   "DALLAS": {
-   "genere": "2026-11-26T09:02:27.892Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "DALLAS",
    "fiche": "DALLAS 9-10-1",
    "pointage": {
-    "releve": "2026-11-26T09:02:27.892Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Isac Lundestrom",
@@ -12079,8 +12079,8 @@
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:02:27.892Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Alexander Holtz",
@@ -12367,15 +12367,15 @@
    "reprises": []
   },
   "OTTAWA": {
-   "genere": "2026-11-26T09:02:40.600Z",
+   "genere": "2026-11-28T11:38:24.351Z",
    "equipe": "OTTAWA",
-   "fiche": "OTTAWA 3-16-2",
+   "fiche": "OTTAWA 3-17-2",
    "pointage": {
-    "releve": "2026-11-26T09:02:40.600Z",
+    "releve": "2026-11-28T11:38:24.351Z",
     "patineurs": [
      {
       "nom": "Jesper Bratt",
-      "gp": 21,
+      "gp": 22,
       "goals": 5,
       "assists": 13,
       "pts": 18,
@@ -12383,38 +12383,38 @@
       "pim": 7,
       "ppg": 2,
       "gwg": 0,
-      "shots": 44,
+      "shots": 47,
       "hits": 19
      },
      {
       "nom": "Ryan Poehling",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
-      "assists": 9,
-      "pts": 16,
-      "plusminus": -10,
+      "assists": 10,
+      "pts": 17,
+      "plusminus": -9,
       "pim": 8,
       "ppg": 1,
       "gwg": 0,
-      "shots": 57,
-      "hits": 27
+      "shots": 59,
+      "hits": 28
      },
      {
       "nom": "Elias Lindholm",
-      "gp": 19,
+      "gp": 20,
       "goals": 8,
       "assists": 6,
       "pts": 14,
       "plusminus": -10,
-      "pim": 18,
+      "pim": 20,
       "ppg": 2,
       "gwg": 0,
-      "shots": 52,
-      "hits": 23
+      "shots": 54,
+      "hits": 25
      },
      {
       "nom": "Brennan Othmann",
-      "gp": 21,
+      "gp": 22,
       "goals": 8,
       "assists": 5,
       "pts": 13,
@@ -12423,20 +12423,20 @@
       "ppg": 1,
       "gwg": 0,
       "shots": 50,
-      "hits": 28
+      "hits": 30
      },
      {
       "nom": "Jamie Drysdale",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 10,
       "pts": 11,
-      "plusminus": -11,
+      "plusminus": -13,
       "pim": 10,
       "ppg": 0,
       "gwg": 0,
-      "shots": 37,
-      "hits": 42
+      "shots": 38,
+      "hits": 45
      },
      {
       "nom": "Jesse Ylonen",
@@ -12452,86 +12452,86 @@
       "hits": 19
      },
      {
+      "nom": "Josh Morrissey",
+      "gp": 22,
+      "goals": 5,
+      "assists": 4,
+      "pts": 9,
+      "plusminus": -13,
+      "pim": 17,
+      "ppg": 2,
+      "gwg": 1,
+      "shots": 44,
+      "hits": 61
+     },
+     {
       "nom": "Chris Kreider",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 6,
       "pts": 9,
-      "plusminus": -3,
-      "pim": 10,
+      "plusminus": -2,
+      "pim": 12,
       "ppg": 1,
       "gwg": 0,
-      "shots": 43,
-      "hits": 29
+      "shots": 47,
+      "hits": 30
      },
      {
       "nom": "Tom Wilson",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 6,
       "pts": 9,
-      "plusminus": 3,
+      "plusminus": 4,
       "pim": 23,
       "ppg": 0,
       "gwg": 0,
-      "shots": 33,
-      "hits": 37
+      "shots": 36,
+      "hits": 38
      },
      {
       "nom": "Radko Gudas",
-      "gp": 20,
+      "gp": 21,
       "goals": 2,
       "assists": 6,
       "pts": 8,
       "plusminus": 1,
-      "pim": 26,
+      "pim": 38,
       "ppg": 0,
       "gwg": 0,
       "shots": 23,
-      "hits": 43
-     },
-     {
-      "nom": "Josh Morrissey",
-      "gp": 21,
-      "goals": 5,
-      "assists": 3,
-      "pts": 8,
-      "plusminus": -14,
-      "pim": 15,
-      "ppg": 2,
-      "gwg": 1,
-      "shots": 43,
-      "hits": 60
+      "hits": 44
      },
      {
       "nom": "Joni Ikonen",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 5,
       "pts": 8,
-      "plusminus": -18,
+      "plusminus": -20,
       "pim": 13,
       "ppg": 0,
       "gwg": 0,
-      "shots": 45,
+      "shots": 47,
       "hits": 20
      },
      {
       "nom": "Mikhail Sergachev",
-      "gp": 21,
-      "goals": 0,
+      "gp": 22,
+      "goals": 1,
       "assists": 7,
-      "pts": 7,
-      "plusminus": -12,
+      "pts": 8,
+      "plusminus": -11,
       "pim": 18,
       "ppg": 0,
       "gwg": 0,
-      "shots": 49,
-      "hits": 35
+      "shots": 52,
+      "hits": 37
      },
      {
       "nom": "Alex Newhook",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 3,
       "pts": 6,
@@ -12544,20 +12544,20 @@
      },
      {
       "nom": "Sam Steel",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 6,
       "pts": 6,
-      "plusminus": 1,
+      "plusminus": -1,
       "pim": 7,
       "ppg": 0,
       "gwg": 0,
       "shots": 16,
-      "hits": 22
+      "hits": 23
      },
      {
       "nom": "Samuel Honzek",
-      "gp": 12,
+      "gp": 13,
       "goals": 2,
       "assists": 3,
       "pts": 5,
@@ -12582,19 +12582,6 @@
       "hits": 2
      },
      {
-      "nom": "Porter Martone",
-      "gp": 18,
-      "goals": 1,
-      "assists": 2,
-      "pts": 3,
-      "plusminus": -5,
-      "pim": 6,
-      "ppg": 1,
-      "gwg": 0,
-      "shots": 17,
-      "hits": 8
-     },
-     {
       "nom": "Erik Brannstrom",
       "gp": 19,
       "goals": 1,
@@ -12608,17 +12595,43 @@
       "hits": 16
      },
      {
+      "nom": "Porter Martone",
+      "gp": 19,
+      "goals": 1,
+      "assists": 2,
+      "pts": 3,
+      "plusminus": -7,
+      "pim": 6,
+      "ppg": 1,
+      "gwg": 0,
+      "shots": 17,
+      "hits": 8
+     },
+     {
       "nom": "Dylan Samberg",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 2,
       "pts": 2,
-      "plusminus": -1,
+      "plusminus": -3,
       "pim": 16,
       "ppg": 0,
       "gwg": 0,
       "shots": 19,
-      "hits": 28
+      "hits": 29
+     },
+     {
+      "nom": "Scott Mayfield",
+      "gp": 1,
+      "goals": 0,
+      "assists": 0,
+      "pts": 0,
+      "plusminus": 0,
+      "pim": 0,
+      "ppg": 0,
+      "gwg": 0,
+      "shots": 0,
+      "hits": 0
      },
      {
       "nom": "Nico Myatovic",
@@ -12635,7 +12648,7 @@
      },
      {
       "nom": "Reilly Webb",
-      "gp": 5,
+      "gp": 6,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -12644,7 +12657,7 @@
       "ppg": 0,
       "gwg": 0,
       "shots": 7,
-      "hits": 10
+      "hits": 13
      }
     ],
     "gardiens": [
@@ -12674,32 +12687,32 @@
      },
      {
       "nom": "Carter Hart",
-      "gp": 18,
+      "gp": 19,
       "pim": 0,
       "w": 3,
-      "l": 12,
+      "l": 13,
       "t": 2,
-      "avg": 3.87,
-      "svpct": 0.869,
+      "avg": 3.76,
+      "svpct": 0.872,
       "so": 0,
-      "mp": 992
+      "mp": 1052
      }
     ]
    },
    "xtra": {
-    "releve": "2026-11-26T09:02:40.600Z",
-    "date": "11/26/2026",
+    "releve": "2026-11-28T11:38:24.351Z",
+    "date": "11/28/2026",
     "joueurs": [
      {
       "nom": "Alex Newhook",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 3,
       "pts": 6,
       "shots": 18,
       "pim": 6,
-      "mp": 238,
+      "mp": 244,
       "hits": 10
      },
      {
@@ -12717,19 +12730,19 @@
      {
       "nom": "Brennan Othmann",
       "pos": "LW",
-      "gp": 21,
+      "gp": 22,
       "goals": 8,
       "assists": 5,
       "pts": 13,
       "shots": 50,
       "pim": 21,
-      "mp": 354,
-      "hits": 28
+      "mp": 370,
+      "hits": 30
      },
      {
       "nom": "Carter Hart",
       "pos": "G",
-      "gp": 18,
+      "gp": 19,
       "goals": 0,
       "assists": 0,
       "pts": 0,
@@ -12737,44 +12750,44 @@
       "pim": 0,
       "mp": 0,
       "hits": 0,
-      "qg": 5,
+      "qg": 6,
       "hs": 0
      },
      {
       "nom": "Chris Kreider",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 6,
       "pts": 9,
-      "shots": 43,
-      "pim": 10,
-      "mp": 349,
-      "hits": 29
+      "shots": 47,
+      "pim": 12,
+      "mp": 372,
+      "hits": 30
      },
      {
       "nom": "Dylan Samberg",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 2,
       "pts": 2,
       "shots": 19,
       "pim": 16,
-      "mp": 283,
-      "hits": 28
+      "mp": 297,
+      "hits": 29
      },
      {
       "nom": "Elias Lindholm",
       "pos": "C",
-      "gp": 19,
+      "gp": 20,
       "goals": 8,
       "assists": 6,
       "pts": 14,
-      "shots": 52,
-      "pim": 18,
-      "mp": 409,
-      "hits": 23
+      "shots": 54,
+      "pim": 20,
+      "mp": 429,
+      "hits": 25
      },
      {
       "nom": "Erik Brannstrom",
@@ -12791,25 +12804,25 @@
      {
       "nom": "Jamie Drysdale",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 1,
       "assists": 10,
       "pts": 11,
-      "shots": 37,
+      "shots": 38,
       "pim": 10,
-      "mp": 510,
-      "hits": 42
+      "mp": 527,
+      "hits": 45
      },
      {
       "nom": "Jesper Bratt",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 5,
       "assists": 13,
       "pts": 18,
-      "shots": 44,
+      "shots": 47,
       "pim": 7,
-      "mp": 408,
+      "mp": 428,
       "hits": 19
      },
      {
@@ -12827,38 +12840,38 @@
      {
       "nom": "Joni Ikonen",
       "pos": "RW",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 5,
       "pts": 8,
-      "shots": 45,
+      "shots": 47,
       "pim": 13,
-      "mp": 302,
+      "mp": 319,
       "hits": 20
      },
      {
       "nom": "Josh Morrissey",
       "pos": "D",
-      "gp": 21,
+      "gp": 22,
       "goals": 5,
-      "assists": 3,
-      "pts": 8,
-      "shots": 43,
-      "pim": 15,
-      "mp": 499,
-      "hits": 60
+      "assists": 4,
+      "pts": 9,
+      "shots": 44,
+      "pim": 17,
+      "mp": 521,
+      "hits": 61
      },
      {
       "nom": "Mikhail Sergachev",
       "pos": "D",
-      "gp": 21,
-      "goals": 0,
+      "gp": 22,
+      "goals": 1,
       "assists": 7,
-      "pts": 7,
-      "shots": 49,
+      "pts": 8,
+      "shots": 52,
       "pim": 18,
-      "mp": 468,
-      "hits": 35
+      "mp": 495,
+      "hits": 37
      },
      {
       "nom": "Nico Myatovic",
@@ -12875,73 +12888,73 @@
      {
       "nom": "Porter Martone",
       "pos": "LW",
-      "gp": 18,
+      "gp": 19,
       "goals": 1,
       "assists": 2,
       "pts": 3,
       "shots": 17,
       "pim": 6,
-      "mp": 126,
+      "mp": 138,
       "hits": 8
      },
      {
       "nom": "Radko Gudas",
       "pos": "D",
-      "gp": 20,
+      "gp": 21,
       "goals": 2,
       "assists": 6,
       "pts": 8,
       "shots": 23,
-      "pim": 26,
-      "mp": 346,
-      "hits": 43
+      "pim": 38,
+      "mp": 358,
+      "hits": 44
      },
      {
       "nom": "Reilly Webb",
       "pos": "D",
-      "gp": 5,
+      "gp": 6,
       "goals": 0,
       "assists": 0,
       "pts": 0,
       "shots": 7,
       "pim": 4,
-      "mp": 76,
-      "hits": 10
+      "mp": 95,
+      "hits": 13
      },
      {
       "nom": "Ryan Poehling",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 7,
-      "assists": 9,
-      "pts": 16,
-      "shots": 57,
+      "assists": 10,
+      "pts": 17,
+      "shots": 59,
       "pim": 8,
-      "mp": 461,
-      "hits": 27
+      "mp": 483,
+      "hits": 28
      },
      {
       "nom": "Sam Steel",
       "pos": "C",
-      "gp": 21,
+      "gp": 22,
       "goals": 0,
       "assists": 6,
       "pts": 6,
       "shots": 16,
       "pim": 7,
-      "mp": 168,
-      "hits": 22
+      "mp": 180,
+      "hits": 23
      },
      {
       "nom": "Samuel Honzek",
       "pos": "LW",
-      "gp": 12,
+      "gp": 13,
       "goals": 2,
       "assists": 3,
       "pts": 5,
       "shots": 13,
       "pim": 26,
-      "mp": 160,
+      "mp": 167,
       "hits": 7
      },
      {
@@ -12959,16 +12972,28 @@
       "hs": 0
      },
      {
+      "nom": "Scott Mayfield",
+      "pos": "D",
+      "gp": 1,
+      "goals": 0,
+      "assists": 0,
+      "pts": 0,
+      "shots": 0,
+      "pim": 0,
+      "mp": 9,
+      "hits": 0
+     },
+     {
       "nom": "Tom Wilson",
       "pos": "LW",
-      "gp": 21,
+      "gp": 22,
       "goals": 3,
       "assists": 6,
       "pts": 9,
-      "shots": 33,
+      "shots": 36,
       "pim": 23,
-      "mp": 255,
-      "hits": 37
+      "mp": 274,
+      "hits": 38
      },
      {
       "nom": "Ukko-Pekka Luukkonen",
